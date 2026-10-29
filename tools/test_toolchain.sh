@@ -6,8 +6,10 @@ ROOT=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
 cd "$ROOT"
 echo "== bash -n tools/*.sh"
 for script in tools/*.sh; do bash -n "$script"; done
+echo "== start-game tool"
+python3 tools/test_start_game.py
 echo "== python compile"
-python3 -m py_compile tools/check_layers.py tools/check_harness.py tools/art/validate.py tools/data/check_balance.py
+python3 -m py_compile tools/check_layers.py tools/check_harness.py tools/art/validate.py tools/data/check_balance.py tools/start_game.py
 echo "== godot version"
 VERSION=$(tools/godot.sh --version 2>/dev/null | tail -n1)
 case "$VERSION" in

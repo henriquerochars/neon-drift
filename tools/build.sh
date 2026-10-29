@@ -30,6 +30,11 @@ ship_licenses() {
 }
 
 export_preset() { # <preset> <path>
+  # A fresh checkout (.godot/ missing) needs an unscanned warm-up import first: the project theme
+  # references the font and UI panel before their first import (same as tools/test.sh).
+  if [ ! -d "$ROOT/.godot/imported" ]; then
+    "$ROOT/tools/godot.sh" --headless --import >"${LOG%.log}-warmup.log" 2>&1 || true
+  fi
   if ! "$ROOT/tools/godot.sh" --headless --import >"$LOG" 2>&1; then
     tail -40 "$LOG" >&2
     echo "build: import failed (see $LOG)" >&2
