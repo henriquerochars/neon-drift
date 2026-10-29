@@ -29,10 +29,18 @@ check (`tools/agent/check_record.py`) verifies.
   they are not part of the clean gdUnit runs. Network tests use local ENet, not internet.
   Visual fixtures do not demonstrate real two-machine online play.
 
+## Integrated QA
+- Phase 3 evidence: `docs/qa/full-playtest-2026-10-29.md` contains 12 screens,
+  6 race GIFs, 9 seeded races and a two-process loopback lobby/start smoke.
+- Review R1 fixes and countdown ranking regression are integrated. The final local
+  suite passes 78 gdUnit tests; harness suites pass 193 tests.
+- Captures predate the final fixes. Capture-tool shutdown warnings remain a known
+  limitation; neither eight-machine internet play nor exported builds are verified.
+
 ## In flight
-- Phase 3 QA done (`docs/qa/full-playtest-2026-10-29.md`): 12 screens, 6 race GIFs with and without
-  HUD, 9 seeded races, 2-process online smoke PASS. Review round 1 (11 findings) fixed and merged.
-  `main` has 78 gdUnit tests and a passing gate.
-- Backlog: NAT traversal / join codes (join is address:port), Android/Web export verification,
-  touch virtual stick, driver portraits, balance pass on curve speeds, capture tools audio
-  cleanup at exit.
+- Initial delivery PR: `feat/neon-drift` against the new repository's `main`.
+  The branch preserves the integrated game as a snapshot; original development
+  history remains on local `main` at `215f0e7`.
+- Remaining scope: NAT traversal / join codes (join is address:port), Windows/Android/Web
+  export verification, touch virtual stick, driver portraits, curve-speed balance,
+  capture-tool audio cleanup and human assessment of game feel.

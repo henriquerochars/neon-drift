@@ -197,7 +197,7 @@ assertions across two bug cases. The 67 unaffected cases pass independently.
 
 ## Follow-up (orchestrator, same day)
 
-All three bugs were fixed on `main` after this report: the P1 predicted-finish bug and the
+The production regressions were fixed on local `main` after this report: the P1 predicted-finish bug and the
 shutdown audio leak in `fix/review-r1` (merged as 2d1cd82), the `0TH` countdown place by
 ranking the grid before the countdown starts. `tests/qa/race_contract_bug_test.gd` became
 `tests/qa/race_contract_regression_test.gd` and passes; the full suite is 78/78 and the gate
