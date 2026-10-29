@@ -35,6 +35,8 @@ jobs:
         run: python3 tools/data/check_balance.py
       - name: Validate art assets
         run: python3 tools/art/validate.py
+      - name: Install ffmpeg (audio generator)
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - name: Audio generator self-check
         run: |
           if [ -f tools/audio/gen_audio.py ]; then python3 -I tools/audio/gen_audio.py --check; fi
