@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import os
 import subprocess
 import sys
 import tempfile
@@ -169,7 +170,9 @@ class PlayCheckoutTest(unittest.TestCase):
         return subprocess.run(("git", *args), cwd=cwd, check=True, capture_output=True, text=True).stdout.strip()
 
     def test_creates_then_follows_origin_main_without_touching_the_caller(self) -> None:
-        with mock.patch.dict("os.environ", {}, clear=False):
+        with mock.patch.dict("os.environ"):
+            # CI sets GODOT_BIN, which deliberately skips the .tools link.
+            os.environ.pop("GODOT_BIN", None)
             checkout = start_game.prepare_main_checkout(self.play)
         self.assertEqual((checkout / "a.txt").read_text(), "one\n")
         self.assertTrue((checkout / ".tools").is_symlink())
