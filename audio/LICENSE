@@ -1,0 +1,6 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+The music and sound effects under audio/ were generated for Neon Drift by
+tools/audio/gen_audio.py (a deterministic synthesizer; the script itself is MIT, see LICENSE)
+and are licensed CC BY 4.0: https://creativecommons.org/licenses/by/4.0/legalcode
+Attribution: "Neon Drift audio, Henrique Rocha Serrano, CC BY 4.0".

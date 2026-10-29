@@ -1,0 +1,16 @@
+name: Feature or content idea
+description: A new car, track, part, mode or improvement.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea
+      description: What should the game do, and why would it be more fun?
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Sketches, GIFs or descriptions of the feel you have in mind.

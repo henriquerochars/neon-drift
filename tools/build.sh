@@ -21,6 +21,14 @@ touch artifacts/.gdignore
 LOG="artifacts/build-$PLATFORM.log"
 rm -rf "$OUT"; mkdir -p "$OUT"
 
+# ship_licenses <dir>: every build carries the code, art and audio licenses and the Godot notice.
+ship_licenses() {
+  cp "$ROOT/LICENSE" "$1/LICENSE"
+  cp "$ROOT/art/LICENSE" "$1/ART_LICENSE"
+  [ ! -f "$ROOT/audio/LICENSE" ] || cp "$ROOT/audio/LICENSE" "$1/AUDIO_LICENSE"
+  [ ! -f "$ROOT/THIRD_PARTY_NOTICES.md" ] || cp "$ROOT/THIRD_PARTY_NOTICES.md" "$1/THIRD_PARTY_NOTICES.md"
+}
+
 export_preset() { # <preset> <path>
   if ! "$ROOT/tools/godot.sh" --headless --import >"$LOG" 2>&1; then
     tail -40 "$LOG" >&2
@@ -48,14 +56,12 @@ case "$PLATFORM" in
   windows)
     export_preset "Windows Desktop" "$OUT/Neon Drift.exe"
     ZIP="neondrift-windows-x64-$VERSION.zip"
-    cp "$ROOT/LICENSE" "$OUT/LICENSE"
-    cp "$ROOT/art/LICENSE" "$OUT/ART_LICENSE"
+    ship_licenses "$OUT"
     ( cd "$OUT" && zip -q -j "$ZIP" Neon Drift.exe LICENSE ART_LICENSE ) ;;
   web)
     export_preset "Web" "$OUT/index.html"
     ZIP="neondrift-web-$VERSION.zip"
-    cp "$ROOT/LICENSE" "$OUT/LICENSE"
-    cp "$ROOT/art/LICENSE" "$OUT/ART_LICENSE"
+    ship_licenses "$OUT"
     ( cd "$OUT" && zip -q -r "$ZIP" . -x "$ZIP" ) ;;
   android)
     # Godot reads SDK locations from Editor Settings, not JAVA_HOME/ANDROID_HOME.
