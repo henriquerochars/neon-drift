@@ -56,3 +56,60 @@ func test_refresh_places_cars_and_scenery_sprites() -> void:
 			visible += 1
 	assert_int(visible).is_greater(1)
 	remove_child(road)
+
+
+func test_car_sits_on_its_shadow_and_nitro_flames_hang_from_the_bumper() -> void:
+	var road: PseudoRoad = _road()
+	add_child(road)
+	road.camera_z = 0.0
+	var vfx: RaceVfx = RaceVfx.new()
+	vfx.load_all()
+	var car: RoadSprite = RoadSprite.new()
+	car.texture = CarSprites.new(Catalog.car(&"vortex")).rear_texture(0.0)
+	car.z = Balance.value(&"segment_length") * 6.0
+	car.ground_pixels = CarSprites.GROUND_PIXELS
+	car.vfx = vfx.sprites_for(0, true)
+	assert_int(car.vfx.size()).is_equal(RaceVfx.EXHAUST_OFFSETS.size())
+	var cars: Array[RoadSprite] = [car]
+	road.set_cars(cars)
+	road.refresh()
+	var body: Sprite2D = null
+	var flames: Array[Sprite2D] = []
+	var layer: SpriteLayer = road.get_child(0)
+	for child: Node in layer.get_children():
+		var sprite: Sprite2D = child as Sprite2D
+		if not sprite.visible:
+			continue
+		if sprite.texture == car.texture:
+			body = sprite
+		elif sprite.texture is AtlasTexture:
+			flames.append(sprite)
+	assert_object(body).is_not_null()
+	assert_int(flames.size()).is_equal(2)
+	var body_rect: Rect2 = Rect2(body.position, body.texture.get_size() * body.scale)
+	for flame: Sprite2D in flames:
+		var flame_rect: Rect2 = Rect2(flame.position, flame.texture.get_size() * flame.scale)
+		# The flame starts on the rear bumper and trails below the car, toward the camera.
+		assert_float(flame_rect.position.y).is_greater(
+			body_rect.position.y + body_rect.size.y / 2.0
+		)
+		assert_float(flame_rect.end.y).is_greater(body_rect.end.y)
+	remove_child(road)
+
+
+func test_cars_between_the_camera_and_the_player_are_not_drawn() -> void:
+	var road: PseudoRoad = _road()
+	add_child(road)
+	road.camera_z = 0.0
+	road.near_cull = Balance.value(&"segment_length") * 4.0
+	var near: RoadSprite = RoadSprite.new()
+	near.texture = CarSprites.new(Catalog.car(&"bruiser")).rear_texture(0.0)
+	near.z = Balance.value(&"segment_length")
+	var cars: Array[RoadSprite] = [near]
+	road.set_cars(cars)
+	road.refresh()
+	var layer: SpriteLayer = road.get_child(0)
+	for child: Node in layer.get_children():
+		var sprite: Sprite2D = child as Sprite2D
+		assert_bool(sprite.visible and sprite.texture == near.texture).is_false()
+	remove_child(road)

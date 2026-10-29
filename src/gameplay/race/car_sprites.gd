@@ -9,6 +9,9 @@ const DIRECTION_REAR_RIGHT: String = "north-east"
 const DIRECTION_REAR_LEFT: String = "north-west"
 ## |steer_visual| below this shows the straight rear view.
 const STEER_DEADZONE: float = 0.3
+## Transparent rows under the body of the PixelLab rear sprites (68 px canvas, body ends near
+## row 55); RoadSprite.ground_pixels uses it so cars sit on their shadows.
+const GROUND_PIXELS: float = 12.0
 const PAINT_SHADER_PATH: String = "res://src/gameplay/race/paint.gdshader"
 const BODY_SATURATION: float = 0.35
 ## Low-saturation bodies (navy, silver) still take paint: the threshold follows the base colour.
