@@ -228,6 +228,29 @@ def scan_engine_errors(paths: Sequence[Path]) -> List[str]:
     return hits
 
 
+def _warm_up_import(root: Path, job_dir: Path, log: LogFn) -> None:
+    """First pass on a cold ``.godot/``: the project theme references the font and UI panel
+    before their first import and logs errors that vanish once the cache exists. Its output
+    is kept for inspection but never scanned."""
+    if (root / ".godot" / "imported").is_dir():
+        return
+    log("import: cold cache, warm-up pass first")
+    warm_log = job_dir / "import-warmup.stdout.log"
+    with open(warm_log, "w", encoding="utf-8") as out:
+        try:
+            subprocess.run(
+                [str(root / "tools" / "godot.sh"), "--headless", "--import"],
+                cwd=str(root),
+                stdin=subprocess.DEVNULL,
+                stdout=out,
+                stderr=subprocess.STDOUT,
+                timeout=_import_timeout(),
+                check=False,
+            )
+        except (OSError, subprocess.TimeoutExpired):
+            log("import: warm-up pass did not finish; the scanned pass follows")
+
+
 def _import_step(root: Path, job_dir: Path, log: LogFn) -> int:
     engine_log = job_dir / "import.log"
     stdout_log = job_dir / "import.stdout.log"
@@ -235,6 +258,7 @@ def _import_step(root: Path, job_dir: Path, log: LogFn) -> int:
         if stale.exists():
             stale.unlink()
     log("import: tools/godot.sh --headless --import")
+    _warm_up_import(root, job_dir, log)
     tracked_before = _tracked_changes(root)
     imports_before = _import_hashes(root)
     timeout = _import_timeout()

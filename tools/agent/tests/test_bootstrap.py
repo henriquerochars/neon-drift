@@ -33,8 +33,9 @@ while [ "$#" -gt 0 ]; do
 done
 if [ "$VERSION" = 1 ]; then echo "${FAKE_GODOT_VERSION:-4.7.2.stable.official.abc}"; exit 0; fi
 if [ "$IMPORT" = 1 ]; then
-  [ -z "${FAKE_GODOT_CALLS:-}" ] || echo import >> "$FAKE_GODOT_CALLS"
-  mkdir -p "$ROOT/.godot"
+  # Only the scanned pass carries --log-file; the cold-cache warm-up pass is not counted.
+  [ -z "${FAKE_GODOT_CALLS:-}" ] || [ -z "$LOG" ] || echo import >> "$FAKE_GODOT_CALLS"
+  mkdir -p "$ROOT/.godot/imported"
   case "${FAKE_GODOT_IMPORT:-ok}" in
     ok) echo "importing"; [ -z "$LOG" ] || echo "import finished" > "$LOG"; exit 0 ;;
     error) echo "importing"; [ -z "$LOG" ] || echo "ERROR: Failed loading resource: res://broken.png" > "$LOG"; exit 0 ;;

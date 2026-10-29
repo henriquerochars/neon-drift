@@ -44,6 +44,13 @@ scan() { # scan <label> <log files...>: print offending lines, return 1 if any
 STATUS=0
 
 echo "== import"
+# A fresh .godot/ needs two passes: the project theme references the font and UI panel before
+# their first import, which logs ERRORs that disappear once the cache exists. Only the second
+# pass is scanned.
+if [ ! -d "$ROOT/.godot/imported" ]; then
+  echo "(cold cache: warm-up import pass)"
+  run_bounded "$IMPORT_TIMEOUT" "$ART/import-warmup.log" --headless --import || true
+fi
 run_bounded "$IMPORT_TIMEOUT" "$ART/import.log" --headless --import
 rc=$?
 [ "$rc" -ne 0 ] && { echo "FAIL: import exited $rc (see artifacts/import.log)"; STATUS=1; }
