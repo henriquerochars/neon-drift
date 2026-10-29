@@ -1,0 +1,19 @@
+{
+  "revision": "a223e1a",
+  "generator": "tools/playtest/readme_media.sh",
+  "files": {
+    "gameplay-coast.gif": 2715077,
+    "gameplay-desert-night.gif": 1802796,
+    "gameplay-sunset-city.gif": 2685463,
+    "garage.gif": 145157,
+    "title.gif": 443626,
+    "screens/menu.png": 14561,
+    "screens/select_car.png": 13528,
+    "screens/select_track.png": 13036,
+    "screens/options.png": 13161,
+    "screens/lobby_host.png": 16783,
+    "screens/results.png": 17658,
+    "cars.png": 18949,
+    "tracks.png": 31215
+  }
+}

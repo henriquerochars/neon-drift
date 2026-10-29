@@ -37,6 +37,10 @@ check (`tools/agent/check_record.py`) verifies.
 - Captures predate the final fixes. Capture-tool shutdown warnings remain a known
   limitation; neither eight-machine internet play nor exported builds are verified.
 
+- README media (`docs/media/`, 2026-10-29) is recorded from the real App scene by
+  `tools/playtest/readme_media.sh`; it postdates the renderer fixes (cars grounded on their
+  shadows, nitro flames on the exhausts, near-camera cars culled).
+
 ## In flight
 - Initial delivery PR: `feat/neon-drift` against the new repository's `main`.
   The branch preserves the integrated game as a snapshot; original development

@@ -156,6 +156,7 @@ func refresh_view() -> void:
 		return
 	var focus: RaceParticipant = _local if _local != null else participants[0]
 	_road.camera_z = focus.state.z - _player_z_offset
+	_road.near_cull = _player_z_offset - Balance.value(&"car_length")
 	_road.camera_x = focus.state.x
 	_road.camera_altitude = focus.state.altitude * CAMERA_ALTITUDE_FOLLOW
 	_road.scroll_background(
@@ -171,6 +172,7 @@ func refresh_view() -> void:
 		sprite.x = participant.state.x
 		sprite.altitude = participant.state.altitude
 		sprite.material = participant.material
+		sprite.ground_pixels = CarSprites.GROUND_PIXELS
 		sprite.vfx = _vfx.sprites_for(participant.id, participant.state.is_nitro_active())
 		entries.append(sprite)
 	_road.set_cars(entries)

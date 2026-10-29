@@ -10,6 +10,8 @@ class Anim:
 	var frames: Array[Texture2D] = []
 	var fps: float = 12.0
 	var loop: bool = false
+	## Vertical pivot from the strip's JSON (0 = top edge); only the nitro flame uses it.
+	var pivot_y: float = 1.0
 
 	func duration() -> float:
 		return float(frames.size()) / maxf(fps, 0.001)
@@ -40,6 +42,10 @@ const NAMES: Array[StringName] = [
 	NITRO_FLAME, THRUSTER_BURST, LANDING_DUST, CRUSH_SPARKS, BUMP_SPARKS
 ]
 const DEFAULT_FPS: float = 12.0
+## Nitro: two flames hang from the exhausts, in the car's source pixels from its base
+## (rear sprites: body bottom at the base, bumper ~8 px up, pipes ~9 px either side of centre).
+const EXHAUST_OFFSETS: Array[Vector2] = [Vector2(-9.0, -8.0), Vector2(9.0, -8.0)]
+const NITRO_FLAME_SCALE: float = 0.45
 
 var _anims: Dictionary = {}
 var _active: Array[Active] = []
@@ -83,7 +89,13 @@ func update(delta: float) -> void:
 func sprites_for(participant_id: int, nitro_active: bool) -> Array[RoadSprite]:
 	var result: Array[RoadSprite] = []
 	if nitro_active and _anims.has(NITRO_FLAME):
-		result.append(_sprite((_anims[NITRO_FLAME] as Anim).frame_at(_clock)))
+		var flame: Anim = _anims[NITRO_FLAME]
+		for offset: Vector2 in EXHAUST_OFFSETS:
+			var sprite: RoadSprite = _sprite(flame.frame_at(_clock))
+			sprite.offset_pixels = offset
+			sprite.pivot_y = flame.pivot_y
+			sprite.scale_multiplier = NITRO_FLAME_SCALE
+			result.append(sprite)
 	for active: Active in _active:
 		if active.participant_id != participant_id:
 			continue
@@ -121,6 +133,7 @@ func _load_anim(name: StringName) -> Anim:
 	var anim: Anim = Anim.new()
 	anim.fps = float(data.get("fps", DEFAULT_FPS))
 	anim.loop = bool(data.get("loop", false))
+	anim.pivot_y = float(data.get("pivot_y", 1.0)) if anim.loop else 1.0
 	var columns: int = maxi(texture.get_width() / frame_w, 1)
 	for index: int in range(count):
 		var atlas: AtlasTexture = AtlasTexture.new()

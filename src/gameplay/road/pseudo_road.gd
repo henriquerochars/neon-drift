@@ -63,6 +63,9 @@ var background_offset: float = 0.0
 var track_model: TrackModel
 var track_def: TrackDef
 
+## Cars closer to the camera than this (world units) are not drawn: they sit between the camera
+## and the focused car and would cover the screen. The race sets it from the player offset.
+var near_cull: float = 0.0
 var _segment_length: float = 1.0
 var _road_half_width: float = 1.0
 var _camera_height: float = 1.0
@@ -201,6 +204,8 @@ func _place_sprites() -> void:
 	for car: RoadSprite in _cars:
 		if car.texture == null:
 			continue
+		if fposmod(car.z - camera_z, track_model.length) < near_cull:
+			continue
 		var index: int = track_model.segment_index(car.z)
 		var n: int = posmod(index - base, count)
 		if n >= _draw_distance:
@@ -245,8 +250,10 @@ func _place_car(seg: Projected, n: int, car: RoadSprite, percent: float) -> void
 		shadow.width = size.x * SHADOW_WIDTH_RATIO
 		_shadows.append(shadow)
 	var depth: int = (_draw_distance - n) * DEPTH_SLOTS + DEPTH_CAR
+	var pixel: float = SPRITE_WORLD_UNITS_PER_PIXEL * scale * HALF_WIDTH * car.scale_multiplier
+	var ground: float = car.ground_pixels * pixel
 	var placement: SpriteLayer.Placement = _clip_placement(
-		Rect2(sx - size.x / 2.0, sy - size.y - lift, size.x, size.y), seg.clip
+		Rect2(sx - size.x / 2.0, sy - size.y - lift + ground, size.x, size.y), seg.clip
 	)
 	if placement != null:
 		placement.texture = car.texture
@@ -265,10 +272,17 @@ func _place_car(seg: Projected, n: int, car: RoadSprite, percent: float) -> void
 			* HALF_WIDTH
 			* sub.scale_multiplier
 		)
-		var sub_x: float = sx + scale * sub.x * _road_half_width * HALF_WIDTH
-		var sub_y: float = sy - lift - scale * sub.altitude * HALF_HEIGHT
+		var sub_x: float = (
+			sx + scale * sub.x * _road_half_width * HALF_WIDTH + sub.offset_pixels.x * pixel
+		)
+		var sub_y: float = (
+			sy - lift - scale * sub.altitude * HALF_HEIGHT + sub.offset_pixels.y * pixel
+		)
 		var sub_placement: SpriteLayer.Placement = _clip_placement(
-			Rect2(sub_x - sub_size.x / 2.0, sub_y - sub_size.y, sub_size.x, sub_size.y), seg.clip
+			Rect2(
+				sub_x - sub_size.x / 2.0, sub_y - sub_size.y * sub.pivot_y, sub_size.x, sub_size.y
+			),
+			seg.clip
 		)
 		if sub_placement == null:
 			continue
