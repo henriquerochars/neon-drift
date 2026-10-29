@@ -1,0 +1,3 @@
+interface:
+  display_name: "Start game"
+  short_description: "Build the latest main for the Web and share it through a Cloudflare quick tunnel"

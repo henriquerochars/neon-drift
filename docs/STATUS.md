@@ -41,6 +41,9 @@ check (`tools/agent/check_record.py`) verifies.
   `tools/playtest/readme_media.sh`; it postdates the renderer fixes (cars grounded on their
   shadows, nitro flames on the exhausts, near-camera cars culled).
 
+- Browser play: the `start-game` skill (`tools/start_game.sh`) builds the latest `origin/main`
+  in a dedicated worktree and shares it through a Cloudflare quick tunnel.
+
 ## In flight
 - Initial delivery PR: `feat/neon-drift` against the new repository's `main`.
   The branch preserves the integrated game as a snapshot; original development

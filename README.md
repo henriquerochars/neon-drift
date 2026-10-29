@@ -121,6 +121,12 @@ tools/godot.sh                # run the game
 
 You can also open `project.godot` in your own Godot 4.7.2 editor and press **F5**.
 
+**Play in a browser and share a link:** `tools/start_game.sh` builds the latest `main` for the
+Web in a separate checkout (your branch is never touched) and publishes it through a free
+Cloudflare quick tunnel. It prints a `https://….trycloudflare.com` link anyone can open;
+`tools/start_game.sh status` and `tools/start_game.sh stop` manage it. The browser build plays
+solo races; online rooms need the desktop build.
+
 **Online:** one player chooses *Online → Host* (default port `7777`). The others choose
 *Online → Join* and type the host's address and port. Join codes and NAT traversal are not in
 yet, so players outside a LAN need the host to open or forward the port.
