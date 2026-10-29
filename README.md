@@ -6,12 +6,15 @@
 
 Pseudo-3D roads · five tunable 80s cars · nitro · air-thruster jumps · online rooms for up to 8
 
+**Free and open source:** MIT code, CC BY 4.0 art and music.
+
 [![Tests](https://github.com/henriquerochars/neon-drift/actions/workflows/test.yml/badge.svg)](https://github.com/henriquerochars/neon-drift/actions/workflows/test.yml)
 ![Godot 4.7.2](https://img.shields.io/badge/Godot-4.7.2-478cbf?logo=godotengine&logoColor=white)
 ![GDScript](https://img.shields.io/badge/GDScript-100%25-355570)
 ![Players](https://img.shields.io/badge/players-1%E2%80%938%20online-ff3b8d)
-![Code: MIT](https://img.shields.io/badge/code-MIT-3ad1e2)
-![Art: CC BY 4.0](https://img.shields.io/badge/art-CC%20BY%204.0-8d4fd6)
+[![Code: MIT](https://img.shields.io/badge/code-MIT-3ad1e2)](LICENSE)
+[![Art and audio: CC BY 4.0](https://img.shields.io/badge/art%20%26%20audio-CC%20BY%204.0-8d4fd6)](LICENSING.md)
+[![PRs welcome](https://img.shields.io/badge/PRs-welcome-f2b134)](CONTRIBUTING.md)
 
 <img src="docs/media/gameplay-coast.gif" alt="Coast Run: starting last, nitro and a thruster jump take the Vortex from 8th to 1st" width="640">
 
@@ -167,8 +170,26 @@ tools/playtest/readme_media.sh  # re-record every GIF and screenshot in this REA
 - Driver portraits, more tracks and a championship mode
 - A balance pass on cornering speed, plus human playtesting of feel
 
+Ideas and bug reports are welcome in [Issues](https://github.com/henriquerochars/neon-drift/issues).
+
+## Contributing
+
+Neon Drift is open source and contributions are welcome: code, tracks, cars, parts, art, sounds,
+balance feedback and bug reports. Read [CONTRIBUTING.md](CONTRIBUTING.md) to set up, run the
+gate and open a pull request. New cars, parts and tracks are data files, so many contributions
+need no code at all. Please follow the [Code of Conduct](CODE_OF_CONDUCT.md) and report security
+problems privately as described in [SECURITY.md](SECURITY.md).
+
 ## License
 
-Code is [MIT](LICENSE). Art is [CC BY 4.0](art/LICENSE), credited to
-"Neon Drift art, Henrique Rocha Serrano". Inspired by the arcade and handheld racers of the
+| What | License |
+|---|---|
+| Code, scenes, data, tests and tools | [MIT](LICENSE) |
+| Art (`art/`, `docs/media/`) | [CC BY 4.0](art/LICENSE) |
+| Music and sound effects (`audio/`) | [CC BY 4.0](audio/LICENSE) |
+
+You may use, change and share all of it, including commercially, as long as you keep the
+copyright notice (MIT) or credit "Neon Drift art/audio, Henrique Rocha Serrano" (CC BY 4.0).
+Details in [LICENSING.md](LICENSING.md), [credits](CREDITS.md) and
+[third-party notices](THIRD_PARTY_NOTICES.md). Inspired by the arcade and handheld racers of the
 80s and 90s; no assets or names from other games are used.

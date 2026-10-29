@@ -1,0 +1,41 @@
+name: Bug report
+description: Something in the game or the tools does not work as expected.
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Solo race on Desert Night with the Mirage
+        2. Jump on the car ahead during lap 2
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      placeholder: v0.1.0 or the commit SHA
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options: [Windows, Linux, macOS, Android, Web, Other]
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Game mode
+      options: [Solo race, Online (host), Online (client), Menus or garage, Not in game]
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots, GIFs or logs
+      description: Drag files here. Race seeds help a lot.

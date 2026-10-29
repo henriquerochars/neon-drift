@@ -1,5 +1,9 @@
 Creative Commons Attribution 4.0 International (CC BY 4.0)
 
-Art under art/ was generated for Neon Drift with PixelLab (https://pixellab.ai) and is
-licensed CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+The art under art/ (sprites, backgrounds, scenery, UI panels, the pixel font, VFX) and the
+README media under docs/media/ were made for Neon Drift with PixelLab (https://pixellab.ai)
+and are licensed CC BY 4.0: https://creativecommons.org/licenses/by/4.0/legalcode
 Attribution: "Neon Drift art, Henrique Rocha Serrano, CC BY 4.0".
+
+Provenance for every generated file (job id, prompt, download URL, sha256) is recorded in
+art/source/pixellab/.
