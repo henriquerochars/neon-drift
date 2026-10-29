@@ -1,0 +1,51 @@
+name: Tests
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Lint and headless tests
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Harness tests
+        run: tools/agent.sh test-harness
+      - uses: ./.github/actions/setup-godot
+      - name: Toolchain self-test
+        run: bash tools/test_toolchain.sh
+      - name: Doctor
+        run: tools/doctor.sh
+      - name: Lint
+        run: tools/lint.sh
+      - name: Balance CSV
+        run: python3 tools/data/check_balance.py
+      - name: Validate art assets
+        run: python3 tools/art/validate.py
+      - name: Install ffmpeg (audio generator)
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: Audio generator self-check
+        run: |
+          if [ -f tools/audio/gen_audio.py ]; then python3 -I tools/audio/gen_audio.py --check; fi
+      - name: Test
+        run: tools/test.sh
+      - name: Upload logs
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: test-logs
+          path: artifacts/
+          retention-days: 7

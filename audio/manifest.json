@@ -1,0 +1,260 @@
+{
+  "generator": "tools/audio/gen_audio.py",
+  "sample_rate": 44100,
+  "peak_dbfs": -1.0,
+  "files": [
+    {
+      "name": "menu_theme",
+      "path": "audio/music/menu_theme.ogg",
+      "role": "music",
+      "loop": true,
+      "bpm": 100.0,
+      "seconds": 38.4,
+      "channels": 2,
+      "pcm_sha256": "3c0dbb832383069718d24e1e05d927d985072917c74532f085190f6f65fceaa7",
+      "sha256": "007a146dc7c2141e2d5a87617b988560eda7ec6f5536a5fac3810425dc15afab"
+    },
+    {
+      "name": "race_a",
+      "path": "audio/music/race_a.ogg",
+      "role": "music",
+      "loop": true,
+      "bpm": 128.0,
+      "seconds": 45.0,
+      "channels": 2,
+      "pcm_sha256": "c7106d15e1b305ae082b9e139164991cc6288b6dcb28f9862e19bdb0f313f95a",
+      "sha256": "e492f7191b47e7b3a1a515ef023d36cdd28c7ef3a29150196474dc8e89e19fcc"
+    },
+    {
+      "name": "race_b",
+      "path": "audio/music/race_b.ogg",
+      "role": "music",
+      "loop": true,
+      "bpm": 140.0,
+      "seconds": 48.0,
+      "channels": 2,
+      "pcm_sha256": "2b01e183bdd260aa71d896870af7000e056ef19cf5845c5ec4c6b30875e085d2",
+      "sha256": "14793375e350228a5e298100ed88714bc2d486c9ea2be02f7b6e68d9d1171218"
+    },
+    {
+      "name": "results_jingle",
+      "path": "audio/music/results_jingle.ogg",
+      "role": "music",
+      "loop": false,
+      "bpm": 120.0,
+      "seconds": 6.0,
+      "channels": 2,
+      "pcm_sha256": "2ee75b9603e86791f69c2ce03dd4a0d7f9773cc5e6317f74ee894373ad9659b4",
+      "sha256": "2acf4cb043dd61623a90205d49a2d5689886c9a7c52c4153713aac4154051483"
+    },
+    {
+      "name": "bump",
+      "path": "audio/sfx/bump.ogg",
+      "role": "sfx",
+      "loop": false,
+      "bpm": 0.0,
+      "seconds": 0.14,
+      "channels": 1,
+      "pcm_sha256": "0aea92cc1f5b4e5deb907f282217a12aaecc4ad58119cb524dc7a80ee0cb7308",
+      "sha256": "344f0c4fc5a5d426c603d72ad770a8ac17988190300c891dfcf905462f76c526"
+    },
+    {
+      "name": "buy",
+      "path": "audio/sfx/buy.ogg",
+      "role": "sfx",
+      "loop": false,
+      "bpm": 0.0,
+      "seconds": 0.53,
+      "channels": 1,
+      "pcm_sha256": "cff09392c702ae8d6748ca6b92baf039c7af28ffbbbe20cf6d785c198382b5be",
+      "sha256": "dcaafe22031adfa67494dcda9986ba0a7e3222974442f319433012be33a83886"
+    },
+    {
+      "name": "countdown_beep",
+      "path": "audio/sfx/countdown_beep.ogg",
+      "role": "sfx",
+      "loop": false,
+      "bpm": 0.0,
+      "seconds": 0.17,
+      "channels": 1,
+      "pcm_sha256": "f8214ec18163c6943c275dede8bda4ecd3d29de01f84446ce555431d312db1f9",
+      "sha256": "257ef0b2bd283f61d60a1c4ec8fd9c54f555dc9ae6d18bc4a2856e9aa22b7c0e"
+    },
+    {
+      "name": "crush",
+      "path": "audio/sfx/crush.ogg",
+      "role": "sfx",
+      "loop": false,
+      "bpm": 0.0,
+      "seconds": 0.65,
+      "channels": 1,
+      "pcm_sha256": "7b4f05e466b8890a1ed2f562bebca5146a8c1e555347c6af9b7fe22bf0b83d8d",
+      "sha256": "ebf5e26b06fc8413469309d2f05473819735b058b4879591dfe5e7c7a4f06e89"
+    },
+    {
+      "name": "engine_loop",
+      "path": "audio/sfx/engine_loop.ogg",
+      "role": "sfx",
+      "loop": true,
+      "bpm": 0.0,
+      "seconds": 1.0,
+      "channels": 1,
+      "pcm_sha256": "c0448b37f7b35d09c927be59c1dd8cc6bf37bbb89bb110f46bf7b71d6a45795d",
+      "sha256": "09992dc3700f57188192e185cd00d345eec6f01ae8c864ab1fa16d0e637801df"
+    },
+    {
+      "name": "error",
+      "path": "audio/sfx/error.ogg",
+      "role": "sfx",
+      "loop": false,
+      "bpm": 0.0,
+      "seconds": 0.24,
+      "channels": 1,
+      "pcm_sha256": "8fa23f6c4c0754819c165e25d929b15a3394c11126fec02198ebf9e454e860bf",
+      "sha256": "3e471687d48bb375ab555f28529b4878ca4824504b5533658c03ae2f70150d6a"
+    },
+    {
+      "name": "finish",
+      "path": "audio/sfx/finish.ogg",
+      "role": "sfx",
+      "loop": false,
+      "bpm": 0.0,
+      "seconds": 0.94,
+      "channels": 1,
+      "pcm_sha256": "bd12e500c72bda372c4495289003c33a0f22034d80d5352b0d1bef7f88208e60",
+      "sha256": "cf2e90a74e2d92eafb679fac3dd52201d5a733c4319426b95fa98165e9e1ff83"
+    },
+    {
+      "name": "go",
+      "path": "audio/sfx/go.ogg",
+      "role": "sfx",
+      "loop": false,
+      "bpm": 0.0,
+      "seconds": 0.62,
+      "channels": 1,
+      "pcm_sha256": "566e26dccf7eaad838ef121675882eb8a81ce2e28ec76e9d1544e5e0b0239ddb",
+      "sha256": "a4bf5e63167f5eb24648f8c6e37676414dbf1adf681287bc1ed7ab1804e40f29"
+    },
+    {
+      "name": "hard_landing",
+      "path": "audio/sfx/hard_landing.ogg",
+      "role": "sfx",
+      "loop": false,
+      "bpm": 0.0,
+      "seconds": 0.45,
+      "channels": 1,
+      "pcm_sha256": "0032ae3ea34c8cc6e91eb696c8bbf387dfb404c3e1740a0c9101f2e904752f91",
+      "sha256": "6de28194be158897e680856b271b9389aebbca5e49b4cbbf5fa6de791ff0fe21"
+    },
+    {
+      "name": "landing",
+      "path": "audio/sfx/landing.ogg",
+      "role": "sfx",
+      "loop": false,
+      "bpm": 0.0,
+      "seconds": 0.23,
+      "channels": 1,
+      "pcm_sha256": "9497fa0a0d383d937d4d52c24042e98e2fab4692481cd9caaecbcf5e1c460733",
+      "sha256": "0b39e699c999d74a731ea5303bcdf9a5ce3d085cef9b0f7867ed660ea1b749c8"
+    },
+    {
+      "name": "lap",
+      "path": "audio/sfx/lap.ogg",
+      "role": "sfx",
+      "loop": false,
+      "bpm": 0.0,
+      "seconds": 0.39,
+      "channels": 1,
+      "pcm_sha256": "2da60701a7aa0317d8718948f5d58f309ca0d0e5d81ca11014dd4233437bd7b4",
+      "sha256": "67e3d15fdbf461bda1897967cd83496dc74f0d5e40559cc0f3ea35a234730cb5"
+    },
+    {
+      "name": "menu_cancel",
+      "path": "audio/sfx/menu_cancel.ogg",
+      "role": "sfx",
+      "loop": false,
+      "bpm": 0.0,
+      "seconds": 0.24,
+      "channels": 1,
+      "pcm_sha256": "affa7663eec529bc81b33222dd5255ca3bb5719b47748ca77282c3c256948cfb",
+      "sha256": "1fc51d2716fb9002b3c7b7357f755724cb16313bb406c7f74751b4fcef03d46c"
+    },
+    {
+      "name": "menu_confirm",
+      "path": "audio/sfx/menu_confirm.ogg",
+      "role": "sfx",
+      "loop": false,
+      "bpm": 0.0,
+      "seconds": 0.24,
+      "channels": 1,
+      "pcm_sha256": "3b661fb27228d85d008541768debde25fbc0975a9fe08e53ef0375889b5479a4",
+      "sha256": "97f3748deae0c6114c4571d1ad18ac67cfc11906dbdb5b2e58b8f371aa779d5b"
+    },
+    {
+      "name": "menu_move",
+      "path": "audio/sfx/menu_move.ogg",
+      "role": "sfx",
+      "loop": false,
+      "bpm": 0.0,
+      "seconds": 0.07,
+      "channels": 1,
+      "pcm_sha256": "ddc37ce5f7790f37c685921bf40e9e9513eb4b87d6e0a7a31304758f42b439bc",
+      "sha256": "614b6541161b32b82410c588ce29595862a2edb0f1ad9e3d2284febeadd2d6b3"
+    },
+    {
+      "name": "nitro_ignite",
+      "path": "audio/sfx/nitro_ignite.ogg",
+      "role": "sfx",
+      "loop": false,
+      "bpm": 0.0,
+      "seconds": 0.5,
+      "channels": 1,
+      "pcm_sha256": "a12c1880aa4cee947bcd3a2b2d0224bc7510d0fc537011458aa068fa2b4d7c9e",
+      "sha256": "12f58b5bd504a1ede6cd516551c97ab6de8f91b0b653c709d470f820750cd18a"
+    },
+    {
+      "name": "nitro_loop",
+      "path": "audio/sfx/nitro_loop.ogg",
+      "role": "sfx",
+      "loop": true,
+      "bpm": 0.0,
+      "seconds": 1.0,
+      "channels": 1,
+      "pcm_sha256": "8d5b695f6b54af3833bbd521286faa0d7110cb968b1fe5d6de9d87683ad71641",
+      "sha256": "afaf7bdca79357e4ecf9f8966485503733b7b48d1bee55eb9242f2508ce0f3d8"
+    },
+    {
+      "name": "offroad_loop",
+      "path": "audio/sfx/offroad_loop.ogg",
+      "role": "sfx",
+      "loop": true,
+      "bpm": 0.0,
+      "seconds": 1.0,
+      "channels": 1,
+      "pcm_sha256": "ed47574decf3ebd83c6ccc4a6d1069c228f973d70407e59b63a3d6e19027127c",
+      "sha256": "ff1f9c70c96fcd0f2fbbb2978c6de661ad2f8ba7c6c4f3333718b3cad902032b"
+    },
+    {
+      "name": "scenery_hit",
+      "path": "audio/sfx/scenery_hit.ogg",
+      "role": "sfx",
+      "loop": false,
+      "bpm": 0.0,
+      "seconds": 0.35,
+      "channels": 1,
+      "pcm_sha256": "7235b1beebca3c7c02280c9dee0308eab7de8781ae9b57b88d134eda2f06de69",
+      "sha256": "d5e2470cb6b1cce1fb617697476272fc99f382483697798f274a5df97b49d51b"
+    },
+    {
+      "name": "thruster_jump",
+      "path": "audio/sfx/thruster_jump.ogg",
+      "role": "sfx",
+      "loop": false,
+      "bpm": 0.0,
+      "seconds": 0.48,
+      "channels": 1,
+      "pcm_sha256": "8ddfe9e3848fcf26041651ec79ae317033345bb1f5f74aaa6f72d17ef7fd8671",
+      "sha256": "d6bbe4e9062cadb52f6eab119dd7873723f9f14f0c52bb71d6b53280ddede28a"
+    }
+  ]
+}

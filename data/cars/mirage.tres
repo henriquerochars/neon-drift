@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="CarDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://src/data/car_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"mirage"
+display_name = "Mirage"
+description = "Jump specialist. Hops over trouble, hates being landed on."
+sprite_dir = "res://art/cars/mirage"
+base_color = Color(0.5529, 0.3098, 0.8392, 1)
+top_speed_rank = 3
+acceleration_rank = 3
+handling_rank = 3
+nitro_rank = 2
+thruster_rank = 5
+armour_rank = 1

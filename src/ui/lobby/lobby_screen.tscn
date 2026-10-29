@@ -1,0 +1,242 @@
+[gd_scene load_steps=2 format=3 uid="uid://neondrift_lobby"]
+
+[ext_resource type="Script" path="res://src/ui/lobby/lobby_screen.gd" id="1"]
+
+[node name="LobbyScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1")
+
+[node name="TitleLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 2.0
+offset_right = 160.0
+offset_bottom = 10.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.2275, 0.8196, 0.8863, 1)
+text = "ONLINE"
+
+[node name="ConnectPanel" type="PanelContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 70.0
+offset_top = 24.0
+offset_right = 250.0
+offset_bottom = 134.0
+
+[node name="Column" type="VBoxContainer" parent="ConnectPanel"]
+layout_mode = 2
+theme_override_constants/separation = 6
+alignment = 1
+
+[node name="Grid" type="GridContainer" parent="ConnectPanel/Column"]
+layout_mode = 2
+theme_override_constants/h_separation = 6
+theme_override_constants/v_separation = 4
+columns = 2
+
+[node name="PlayerHeader" type="Label" parent="ConnectPanel/Column/Grid"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.3725, 0.7059, 1)
+text = "PLAYER"
+
+[node name="PlayerLabel" type="Label" parent="ConnectPanel/Column/Grid"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+text = "RACER"
+
+[node name="AddressHeader" type="Label" parent="ConnectPanel/Column/Grid"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.3725, 0.7059, 1)
+text = "ADDRESS"
+
+[node name="AddressEdit" type="LineEdit" parent="ConnectPanel/Column/Grid"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(96, 0)
+layout_mode = 2
+text = "127.0.0.1"
+max_length = 40
+
+[node name="PortHeader" type="Label" parent="ConnectPanel/Column/Grid"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.3725, 0.7059, 1)
+text = "PORT"
+
+[node name="PortEdit" type="LineEdit" parent="ConnectPanel/Column/Grid"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(48, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+text = "7777"
+max_length = 5
+
+[node name="Buttons" type="HBoxContainer" parent="ConnectPanel/Column"]
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="HostButton" type="Button" parent="ConnectPanel/Column/Buttons"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "HOST"
+
+[node name="JoinButton" type="Button" parent="ConnectPanel/Column/Buttons"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "JOIN"
+
+[node name="BackButton" type="Button" parent="ConnectPanel/Column/Buttons"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "BACK"
+
+[node name="RoomPanel" type="Control" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="SeatsPanel" type="PanelContainer" parent="RoomPanel"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 12.0
+offset_right = 184.0
+offset_bottom = 156.0
+
+[node name="SeatsBox" type="VBoxContainer" parent="RoomPanel/SeatsPanel"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="SidePanel" type="PanelContainer" parent="RoomPanel"]
+layout_mode = 0
+offset_left = 186.0
+offset_top = 12.0
+offset_right = 316.0
+offset_bottom = 156.0
+
+[node name="Column" type="VBoxContainer" parent="RoomPanel/SidePanel"]
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="CarHeader" type="Label" parent="RoomPanel/SidePanel/Column"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.3725, 0.7059, 1)
+text = "CAR"
+horizontal_alignment = 1
+
+[node name="CarRow" type="HBoxContainer" parent="RoomPanel/SidePanel/Column"]
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="CarPrevButton" type="Button" parent="RoomPanel/SidePanel/Column/CarRow"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "<"
+
+[node name="CarLabel" type="Label" parent="RoomPanel/SidePanel/Column/CarRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+text = "VORTEX"
+horizontal_alignment = 1
+
+[node name="CarNextButton" type="Button" parent="RoomPanel/SidePanel/Column/CarRow"]
+unique_name_in_owner = true
+layout_mode = 2
+text = ">"
+
+[node name="PaintRow" type="HBoxContainer" parent="RoomPanel/SidePanel/Column"]
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="PaintPrevButton" type="Button" parent="RoomPanel/SidePanel/Column/PaintRow"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "<"
+
+[node name="PaintCenter" type="CenterContainer" parent="RoomPanel/SidePanel/Column/PaintRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+
+[node name="PaintSwatch" type="ColorRect" parent="RoomPanel/SidePanel/Column/PaintRow/PaintCenter"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(9, 9)
+layout_mode = 2
+mouse_filter = 2
+color = Color(0.8863, 0.2275, 0.2275, 1)
+
+[node name="PaintNextButton" type="Button" parent="RoomPanel/SidePanel/Column/PaintRow"]
+unique_name_in_owner = true
+layout_mode = 2
+text = ">"
+
+[node name="TrackHeader" type="Label" parent="RoomPanel/SidePanel/Column"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.3725, 0.7059, 1)
+text = "TRACK"
+horizontal_alignment = 1
+
+[node name="TrackRow" type="HBoxContainer" parent="RoomPanel/SidePanel/Column"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="TrackPrevButton" type="Button" parent="RoomPanel/SidePanel/Column/TrackRow"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "<"
+
+[node name="TrackLabel" type="Label" parent="RoomPanel/SidePanel/Column/TrackRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+text = "COAST"
+horizontal_alignment = 1
+
+[node name="TrackNextButton" type="Button" parent="RoomPanel/SidePanel/Column/TrackRow"]
+unique_name_in_owner = true
+layout_mode = 2
+text = ">"
+
+[node name="ReadyButton" type="Button" parent="RoomPanel/SidePanel/Column"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "NOT READY"
+
+[node name="StartButton" type="Button" parent="RoomPanel/SidePanel/Column"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "START"
+
+[node name="LeaveButton" type="Button" parent="RoomPanel/SidePanel/Column"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "LEAVE"
+
+[node name="StatusLabel" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 4.0
+offset_top = 162.0
+offset_right = 316.0
+offset_bottom = 172.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.9490, 0.6941, 0.2039, 1)
+horizontal_alignment = 1

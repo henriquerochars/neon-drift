@@ -1,0 +1,10 @@
+{
+  "frame_width": 84,
+  "frame_height": 62,
+  "frames": 12,
+  "fps": 14,
+  "loop": false,
+  "pivot_x": 0.5,
+  "pivot_y": 0.7097,
+  "source": "pixellab vfx_workbench"
+}

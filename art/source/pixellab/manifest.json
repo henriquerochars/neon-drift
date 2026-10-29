@@ -1,0 +1,482 @@
+[
+ {
+  "name": "bg_coast",
+  "url": "https://api.pixellab.ai/mcp/images/cb0ffbbf-67c5-4d42-9b86-8fa940d6bad9/download",
+  "dest": "art/backgrounds/bg_coast.png",
+  "kind": "background",
+  "job": "cb0ffbbf-67c5-4d42-9b86-8fa940d6bad9",
+  "prompt": "beach coast horizon panorama"
+ },
+ {
+  "name": "bg_sunset_city",
+  "url": "https://api.pixellab.ai/mcp/images/8d1e8777-d703-4245-b3c8-fed4437497c3/download",
+  "dest": "art/backgrounds/bg_sunset_city.png",
+  "kind": "background",
+  "job": "8d1e8777-d703-4245-b3c8-fed4437497c3",
+  "prompt": "synthwave sunset city horizon panorama"
+ },
+ {
+  "name": "bg_desert_night",
+  "url": "https://api.pixellab.ai/mcp/images/386255c9-911d-428c-abd3-504d222f6ecb/download",
+  "dest": "art/backgrounds/bg_desert_night.png",
+  "kind": "background",
+  "job": "386255c9-911d-428c-abd3-504d222f6ecb",
+  "prompt": "desert night horizon panorama"
+ },
+ {
+  "name": "palm",
+  "url": "https://api.pixellab.ai/mcp/images/de1ecc90-0553-44cf-b2c8-59af39fc09c9/download",
+  "dest": "art/scenery/palm.png",
+  "kind": "scenery",
+  "job": "de1ecc90-0553-44cf-b2c8-59af39fc09c9",
+  "prompt": "palm tree"
+ },
+ {
+  "name": "lamp",
+  "url": "https://api.pixellab.ai/mcp/images/66a3e4d6-3f02-47cb-96de-cce2f4b43e48/download",
+  "dest": "art/scenery/lamp.png",
+  "kind": "scenery",
+  "job": "66a3e4d6-3f02-47cb-96de-cce2f4b43e48",
+  "prompt": "neon street lamp"
+ },
+ {
+  "name": "rock",
+  "url": "https://api.pixellab.ai/mcp/images/fb0b0b05-14e2-4379-8e58-cbbdb7a87583/download",
+  "dest": "art/scenery/rock.png",
+  "kind": "scenery",
+  "job": "fb0b0b05-14e2-4379-8e58-cbbdb7a87583",
+  "prompt": "red sandstone boulder"
+ },
+ {
+  "name": "font_ttf",
+  "url": "https://api.pixellab.ai/mcp/font/a4d1f37f-08ca-4670-bd5b-7e91c173407d/download_ttf",
+  "dest": "art/fonts/neon_drift.ttf",
+  "kind": "font",
+  "job": "a4d1f37f-08ca-4670-bd5b-7e91c173407d",
+  "prompt": "chunky 80s arcade font 8px bold"
+ },
+ {
+  "name": "font_atlas",
+  "url": "https://api.pixellab.ai/mcp/font/a4d1f37f-08ca-4670-bd5b-7e91c173407d/download",
+  "dest": "art/source/pixellab/font_atlas.png",
+  "kind": "font-atlas",
+  "job": "a4d1f37f-08ca-4670-bd5b-7e91c173407d",
+  "prompt": "chunky 80s arcade font 8px bold"
+ },
+ {
+  "name": "ui_panel",
+  "url": "https://api.pixellab.ai/mcp/ui-assets/fdca4aa8-680a-4069-a417-46e4ce66ffa4/download",
+  "dest": "art/ui/panel.png",
+  "kind": "ui",
+  "job": "fdca4aa8-680a-4069-a417-46e4ce66ffa4",
+  "prompt": "synthwave navy panel cyan border"
+ },
+ {
+  "name": "car_vortex_north",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/59d4378c-b547-468e-9c66-a456a5fa8885/rotations/north.png",
+  "dest": "art/cars/vortex/north.png",
+  "kind": "car",
+  "job": "59d4378c-b547-468e-9c66-a456a5fa8885",
+  "prompt": "red wedge sports coupe"
+ },
+ {
+  "name": "car_vortex_north-east",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/59d4378c-b547-468e-9c66-a456a5fa8885/rotations/north-east.png",
+  "dest": "art/cars/vortex/north-east.png",
+  "kind": "car",
+  "job": "59d4378c-b547-468e-9c66-a456a5fa8885",
+  "prompt": "red wedge sports coupe"
+ },
+ {
+  "name": "car_vortex_east",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/59d4378c-b547-468e-9c66-a456a5fa8885/rotations/east.png",
+  "dest": "art/cars/vortex/east.png",
+  "kind": "car",
+  "job": "59d4378c-b547-468e-9c66-a456a5fa8885",
+  "prompt": "red wedge sports coupe"
+ },
+ {
+  "name": "car_vortex_south-east",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/59d4378c-b547-468e-9c66-a456a5fa8885/rotations/south-east.png",
+  "dest": "art/cars/vortex/south-east.png",
+  "kind": "car",
+  "job": "59d4378c-b547-468e-9c66-a456a5fa8885",
+  "prompt": "red wedge sports coupe"
+ },
+ {
+  "name": "car_vortex_south",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/59d4378c-b547-468e-9c66-a456a5fa8885/rotations/south.png",
+  "dest": "art/cars/vortex/south.png",
+  "kind": "car",
+  "job": "59d4378c-b547-468e-9c66-a456a5fa8885",
+  "prompt": "red wedge sports coupe"
+ },
+ {
+  "name": "car_vortex_south-west",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/59d4378c-b547-468e-9c66-a456a5fa8885/rotations/south-west.png",
+  "dest": "art/cars/vortex/south-west.png",
+  "kind": "car",
+  "job": "59d4378c-b547-468e-9c66-a456a5fa8885",
+  "prompt": "red wedge sports coupe"
+ },
+ {
+  "name": "car_vortex_west",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/59d4378c-b547-468e-9c66-a456a5fa8885/rotations/west.png",
+  "dest": "art/cars/vortex/west.png",
+  "kind": "car",
+  "job": "59d4378c-b547-468e-9c66-a456a5fa8885",
+  "prompt": "red wedge sports coupe"
+ },
+ {
+  "name": "car_vortex_north-west",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/59d4378c-b547-468e-9c66-a456a5fa8885/rotations/north-west.png",
+  "dest": "art/cars/vortex/north-west.png",
+  "kind": "car",
+  "job": "59d4378c-b547-468e-9c66-a456a5fa8885",
+  "prompt": "red wedge sports coupe"
+ },
+ {
+  "name": "car_bruiser_north",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/bcf0c03b-6662-4271-a664-99d18d3d2662/rotations/north.png",
+  "dest": "art/cars/bruiser/north.png",
+  "kind": "car",
+  "job": "bcf0c03b-6662-4271-a664-99d18d3d2662",
+  "prompt": "black muscle car"
+ },
+ {
+  "name": "car_bruiser_north-east",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/bcf0c03b-6662-4271-a664-99d18d3d2662/rotations/north-east.png",
+  "dest": "art/cars/bruiser/north-east.png",
+  "kind": "car",
+  "job": "bcf0c03b-6662-4271-a664-99d18d3d2662",
+  "prompt": "black muscle car"
+ },
+ {
+  "name": "car_bruiser_east",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/bcf0c03b-6662-4271-a664-99d18d3d2662/rotations/east.png",
+  "dest": "art/cars/bruiser/east.png",
+  "kind": "car",
+  "job": "bcf0c03b-6662-4271-a664-99d18d3d2662",
+  "prompt": "black muscle car"
+ },
+ {
+  "name": "car_bruiser_south-east",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/bcf0c03b-6662-4271-a664-99d18d3d2662/rotations/south-east.png",
+  "dest": "art/cars/bruiser/south-east.png",
+  "kind": "car",
+  "job": "bcf0c03b-6662-4271-a664-99d18d3d2662",
+  "prompt": "black muscle car"
+ },
+ {
+  "name": "car_bruiser_south",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/bcf0c03b-6662-4271-a664-99d18d3d2662/rotations/south.png",
+  "dest": "art/cars/bruiser/south.png",
+  "kind": "car",
+  "job": "bcf0c03b-6662-4271-a664-99d18d3d2662",
+  "prompt": "black muscle car"
+ },
+ {
+  "name": "car_bruiser_south-west",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/bcf0c03b-6662-4271-a664-99d18d3d2662/rotations/south-west.png",
+  "dest": "art/cars/bruiser/south-west.png",
+  "kind": "car",
+  "job": "bcf0c03b-6662-4271-a664-99d18d3d2662",
+  "prompt": "black muscle car"
+ },
+ {
+  "name": "car_bruiser_west",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/bcf0c03b-6662-4271-a664-99d18d3d2662/rotations/west.png",
+  "dest": "art/cars/bruiser/west.png",
+  "kind": "car",
+  "job": "bcf0c03b-6662-4271-a664-99d18d3d2662",
+  "prompt": "black muscle car"
+ },
+ {
+  "name": "car_bruiser_north-west",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/bcf0c03b-6662-4271-a664-99d18d3d2662/rotations/north-west.png",
+  "dest": "art/cars/bruiser/north-west.png",
+  "kind": "car",
+  "job": "bcf0c03b-6662-4271-a664-99d18d3d2662",
+  "prompt": "black muscle car"
+ },
+ {
+  "name": "car_hornet_north",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/0f3f2e4d-117a-4467-862b-744509d2e254/rotations/north.png",
+  "dest": "art/cars/hornet/north.png",
+  "kind": "car",
+  "job": "0f3f2e4d-117a-4467-862b-744509d2e254",
+  "prompt": "yellow hot hatch"
+ },
+ {
+  "name": "car_hornet_north-east",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/0f3f2e4d-117a-4467-862b-744509d2e254/rotations/north-east.png",
+  "dest": "art/cars/hornet/north-east.png",
+  "kind": "car",
+  "job": "0f3f2e4d-117a-4467-862b-744509d2e254",
+  "prompt": "yellow hot hatch"
+ },
+ {
+  "name": "car_hornet_east",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/0f3f2e4d-117a-4467-862b-744509d2e254/rotations/east.png",
+  "dest": "art/cars/hornet/east.png",
+  "kind": "car",
+  "job": "0f3f2e4d-117a-4467-862b-744509d2e254",
+  "prompt": "yellow hot hatch"
+ },
+ {
+  "name": "car_hornet_south-east",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/0f3f2e4d-117a-4467-862b-744509d2e254/rotations/south-east.png",
+  "dest": "art/cars/hornet/south-east.png",
+  "kind": "car",
+  "job": "0f3f2e4d-117a-4467-862b-744509d2e254",
+  "prompt": "yellow hot hatch"
+ },
+ {
+  "name": "car_hornet_south",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/0f3f2e4d-117a-4467-862b-744509d2e254/rotations/south.png",
+  "dest": "art/cars/hornet/south.png",
+  "kind": "car",
+  "job": "0f3f2e4d-117a-4467-862b-744509d2e254",
+  "prompt": "yellow hot hatch"
+ },
+ {
+  "name": "car_hornet_south-west",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/0f3f2e4d-117a-4467-862b-744509d2e254/rotations/south-west.png",
+  "dest": "art/cars/hornet/south-west.png",
+  "kind": "car",
+  "job": "0f3f2e4d-117a-4467-862b-744509d2e254",
+  "prompt": "yellow hot hatch"
+ },
+ {
+  "name": "car_hornet_west",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/0f3f2e4d-117a-4467-862b-744509d2e254/rotations/west.png",
+  "dest": "art/cars/hornet/west.png",
+  "kind": "car",
+  "job": "0f3f2e4d-117a-4467-862b-744509d2e254",
+  "prompt": "yellow hot hatch"
+ },
+ {
+  "name": "car_hornet_north-west",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/0f3f2e4d-117a-4467-862b-744509d2e254/rotations/north-west.png",
+  "dest": "art/cars/hornet/north-west.png",
+  "kind": "car",
+  "job": "0f3f2e4d-117a-4467-862b-744509d2e254",
+  "prompt": "yellow hot hatch"
+ },
+ {
+  "name": "car_phantom_north",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/12182823-a221-457e-a16f-59f81451a1ab/rotations/north.png",
+  "dest": "art/cars/phantom/north.png",
+  "kind": "car",
+  "job": "12182823-a221-457e-a16f-59f81451a1ab",
+  "prompt": "silver gullwing futuristic car"
+ },
+ {
+  "name": "car_phantom_north-east",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/12182823-a221-457e-a16f-59f81451a1ab/rotations/north-east.png",
+  "dest": "art/cars/phantom/north-east.png",
+  "kind": "car",
+  "job": "12182823-a221-457e-a16f-59f81451a1ab",
+  "prompt": "silver gullwing futuristic car"
+ },
+ {
+  "name": "car_phantom_east",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/12182823-a221-457e-a16f-59f81451a1ab/rotations/east.png",
+  "dest": "art/cars/phantom/east.png",
+  "kind": "car",
+  "job": "12182823-a221-457e-a16f-59f81451a1ab",
+  "prompt": "silver gullwing futuristic car"
+ },
+ {
+  "name": "car_phantom_south-east",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/12182823-a221-457e-a16f-59f81451a1ab/rotations/south-east.png",
+  "dest": "art/cars/phantom/south-east.png",
+  "kind": "car",
+  "job": "12182823-a221-457e-a16f-59f81451a1ab",
+  "prompt": "silver gullwing futuristic car"
+ },
+ {
+  "name": "car_phantom_south",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/12182823-a221-457e-a16f-59f81451a1ab/rotations/south.png",
+  "dest": "art/cars/phantom/south.png",
+  "kind": "car",
+  "job": "12182823-a221-457e-a16f-59f81451a1ab",
+  "prompt": "silver gullwing futuristic car"
+ },
+ {
+  "name": "car_phantom_south-west",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/12182823-a221-457e-a16f-59f81451a1ab/rotations/south-west.png",
+  "dest": "art/cars/phantom/south-west.png",
+  "kind": "car",
+  "job": "12182823-a221-457e-a16f-59f81451a1ab",
+  "prompt": "silver gullwing futuristic car"
+ },
+ {
+  "name": "car_phantom_west",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/12182823-a221-457e-a16f-59f81451a1ab/rotations/west.png",
+  "dest": "art/cars/phantom/west.png",
+  "kind": "car",
+  "job": "12182823-a221-457e-a16f-59f81451a1ab",
+  "prompt": "silver gullwing futuristic car"
+ },
+ {
+  "name": "car_phantom_north-west",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/12182823-a221-457e-a16f-59f81451a1ab/rotations/north-west.png",
+  "dest": "art/cars/phantom/north-west.png",
+  "kind": "car",
+  "job": "12182823-a221-457e-a16f-59f81451a1ab",
+  "prompt": "silver gullwing futuristic car"
+ },
+ {
+  "name": "car_mirage_north",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/500606dd-ec5c-464b-a41f-c88e8438c0a2/rotations/north.png",
+  "dest": "art/cars/mirage/north.png",
+  "kind": "car",
+  "job": "500606dd-ec5c-464b-a41f-c88e8438c0a2",
+  "prompt": "purple pink convertible"
+ },
+ {
+  "name": "car_mirage_north-east",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/500606dd-ec5c-464b-a41f-c88e8438c0a2/rotations/north-east.png",
+  "dest": "art/cars/mirage/north-east.png",
+  "kind": "car",
+  "job": "500606dd-ec5c-464b-a41f-c88e8438c0a2",
+  "prompt": "purple pink convertible"
+ },
+ {
+  "name": "car_mirage_east",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/500606dd-ec5c-464b-a41f-c88e8438c0a2/rotations/east.png",
+  "dest": "art/cars/mirage/east.png",
+  "kind": "car",
+  "job": "500606dd-ec5c-464b-a41f-c88e8438c0a2",
+  "prompt": "purple pink convertible"
+ },
+ {
+  "name": "car_mirage_south-east",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/500606dd-ec5c-464b-a41f-c88e8438c0a2/rotations/south-east.png",
+  "dest": "art/cars/mirage/south-east.png",
+  "kind": "car",
+  "job": "500606dd-ec5c-464b-a41f-c88e8438c0a2",
+  "prompt": "purple pink convertible"
+ },
+ {
+  "name": "car_mirage_south",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/500606dd-ec5c-464b-a41f-c88e8438c0a2/rotations/south.png",
+  "dest": "art/cars/mirage/south.png",
+  "kind": "car",
+  "job": "500606dd-ec5c-464b-a41f-c88e8438c0a2",
+  "prompt": "purple pink convertible"
+ },
+ {
+  "name": "car_mirage_south-west",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/500606dd-ec5c-464b-a41f-c88e8438c0a2/rotations/south-west.png",
+  "dest": "art/cars/mirage/south-west.png",
+  "kind": "car",
+  "job": "500606dd-ec5c-464b-a41f-c88e8438c0a2",
+  "prompt": "purple pink convertible"
+ },
+ {
+  "name": "car_mirage_west",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/500606dd-ec5c-464b-a41f-c88e8438c0a2/rotations/west.png",
+  "dest": "art/cars/mirage/west.png",
+  "kind": "car",
+  "job": "500606dd-ec5c-464b-a41f-c88e8438c0a2",
+  "prompt": "purple pink convertible"
+ },
+ {
+  "name": "car_mirage_north-west",
+  "url": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/4abd07ea-4d7f-4044-842b-f1f333c4a2d7/500606dd-ec5c-464b-a41f-c88e8438c0a2/rotations/north-west.png",
+  "dest": "art/cars/mirage/north-west.png",
+  "kind": "car",
+  "job": "500606dd-ec5c-464b-a41f-c88e8438c0a2",
+  "prompt": "purple pink convertible"
+ },
+ {
+  "name": "billboard",
+  "url": "https://api.pixellab.ai/mcp/images/12b9feb3-ea7c-427d-8b81-6f316c1ab4d9/download",
+  "dest": "art/scenery/billboard.png",
+  "kind": "scenery",
+  "job": "12b9feb3-ea7c-427d-8b81-6f316c1ab4d9",
+  "prompt": "neon NITRO billboard"
+ },
+ {
+  "name": "cactus",
+  "url": "https://api.pixellab.ai/mcp/images/9ae9e98c-e227-4590-b6de-8f248808296f/download",
+  "dest": "art/scenery/cactus.png",
+  "kind": "scenery",
+  "job": "9ae9e98c-e227-4590-b6de-8f248808296f",
+  "prompt": "saguaro cactus"
+ },
+ {
+  "name": "beach_house",
+  "url": "https://api.pixellab.ai/mcp/images/11417d4e-d813-4d94-8596-c91c88f8c4e8/download",
+  "dest": "art/scenery/beach_house.png",
+  "kind": "scenery",
+  "job": "11417d4e-d813-4d94-8596-c91c88f8c4e8",
+  "prompt": "pink beach house"
+ },
+ {
+  "name": "bush",
+  "url": "https://api.pixellab.ai/mcp/images/f6329899-39e7-4fe2-bd6e-08896cce3ae0/download",
+  "dest": "art/scenery/bush.png",
+  "kind": "scenery",
+  "job": "f6329899-39e7-4fe2-bd6e-08896cce3ae0",
+  "prompt": "green bush"
+ },
+ {
+  "name": "vfx_nitro_flame_source",
+  "url": "https://api.pixellab.ai/mcp/pixel-tools/6a265695-7be7-408d-b7c8-2c9bdc4298f4/neon-drift-nitro-flame.png",
+  "dest": "art/source/pixellab/vfx_nitro_flame.png",
+  "kind": "vfx-source",
+  "job": "6a265695-7be7-408d-b7c8-2c9bdc4298f4",
+  "prompt": "vfx_workbench nitro_flame; packed by tools/art/pack_vfx.py"
+ },
+ {
+  "name": "vfx_thruster_burst_source",
+  "url": "https://api.pixellab.ai/mcp/pixel-tools/433ef888-1397-48b9-9652-7bf4e9d75b7d/neon-drift-thruster-burst.png",
+  "dest": "art/source/pixellab/vfx_thruster_burst.png",
+  "kind": "vfx-source",
+  "job": "433ef888-1397-48b9-9652-7bf4e9d75b7d",
+  "prompt": "vfx_workbench thruster_burst; packed by tools/art/pack_vfx.py"
+ },
+ {
+  "name": "vfx_landing_dust_source",
+  "url": "https://api.pixellab.ai/mcp/pixel-tools/603db6fd-8e42-489a-9d5e-b277a9310f99/neon-drift-landing-dust.png",
+  "dest": "art/source/pixellab/vfx_landing_dust.png",
+  "kind": "vfx-source",
+  "job": "603db6fd-8e42-489a-9d5e-b277a9310f99",
+  "prompt": "vfx_workbench landing_dust; packed by tools/art/pack_vfx.py"
+ },
+ {
+  "name": "vfx_crush_sparks_source",
+  "url": "https://api.pixellab.ai/mcp/pixel-tools/04fe8aa4-f6d0-4c3d-a9d4-68960534cad7/neon-drift-crush-sparks.png",
+  "dest": "art/source/pixellab/vfx_crush_sparks.png",
+  "kind": "vfx-source",
+  "job": "04fe8aa4-f6d0-4c3d-a9d4-68960534cad7",
+  "prompt": "vfx_workbench crush_sparks; packed by tools/art/pack_vfx.py"
+ },
+ {
+  "name": "vfx_bump_sparks_source",
+  "url": "https://api.pixellab.ai/mcp/pixel-tools/e16ec942-7f4c-4b27-8544-71cde7ef273d/neon-drift-bump-sparks.png",
+  "dest": "art/source/pixellab/vfx_bump_sparks.png",
+  "kind": "vfx-source",
+  "job": "e16ec942-7f4c-4b27-8544-71cde7ef273d",
+  "prompt": "vfx_workbench bump_sparks; packed by tools/art/pack_vfx.py"
+ },
+ {
+  "name": "icon",
+  "url": "https://api.pixellab.ai/mcp/images/ac9279f9-4393-46a7-958f-7d3034fb4679/download",
+  "dest": "art/ui/icon.png",
+  "kind": "icon",
+  "job": "ac9279f9-4393-46a7-958f-7d3034fb4679",
+  "prompt": "app icon red wedge car synthwave"
+ },
+ {
+  "name": "logo_emblem",
+  "url": "https://api.pixellab.ai/mcp/images/3321618a-c234-4d37-863d-49cb53604783/download",
+  "dest": "art/ui/logo_emblem.png",
+  "kind": "ui",
+  "job": "3321618a-c234-4d37-863d-49cb53604783",
+  "prompt": "synthwave sun road palms emblem, no text"
+ }
+]

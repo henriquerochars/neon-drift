@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://pseudoroad01"]
+
+[ext_resource type="Script" path="res://src/gameplay/road/pseudo_road.gd" id="1"]
+
+[node name="PseudoRoad" type="Node2D"]
+script = ExtResource("1")

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PartDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://src/data/part_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"engine_2"
+slot = &"engine"
+tier = 2
+display_name = "Race Block"
+description = "Engine tier 2."
+price = 900
+rank_bonus = 1.2

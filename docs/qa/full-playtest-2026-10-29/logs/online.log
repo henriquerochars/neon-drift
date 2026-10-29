@@ -1,0 +1,13 @@
+HOST
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+SMOKE_PORT=41076
+SMOKE_SEED=1474570407
+SMOKE_SEATS=2
+CLIENT
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+SMOKE_SEED=1474570407
+SMOKE_SEATS=2
+
+ONLINE_SMOKE_PASS

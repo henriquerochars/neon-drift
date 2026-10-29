@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="TrackDef" load_steps=19 format=3]
+
+[ext_resource type="Script" path="res://src/data/track_def.gd" id="1"]
+[ext_resource type="Script" path="res://src/data/track_segment.gd" id="2"]
+[ext_resource type="Texture2D" path="res://art/backgrounds/bg_coast.png" id="3"]
+[ext_resource type="Texture2D" path="res://art/scenery/palm.png" id="4"]
+[ext_resource type="Texture2D" path="res://art/scenery/palm.png" id="5"]
+[ext_resource type="Texture2D" path="res://art/scenery/bush.png" id="6"]
+[ext_resource type="Texture2D" path="res://art/scenery/beach_house.png" id="7"]
+[ext_resource type="Texture2D" path="res://art/scenery/billboard.png" id="8"]
+
+[sub_resource type="Resource" id="p0"]
+script = ExtResource("2")
+enter = 30
+hold = 40
+leave = 30
+curve = 0
+hill = 0
+scenery = 1
+
+[sub_resource type="Resource" id="p1"]
+script = ExtResource("2")
+enter = 20
+hold = 40
+leave = 20
+curve = 2.5
+hill = 0
+scenery = 1
+
+[sub_resource type="Resource" id="p2"]
+script = ExtResource("2")
+enter = 20
+hold = 30
+leave = 20
+curve = 0
+hill = 600
+scenery = 1
+
+[sub_resource type="Resource" id="p3"]
+script = ExtResource("2")
+enter = 20
+hold = 60
+leave = 20
+curve = -3
+hill = 0
+scenery = 1
+
+[sub_resource type="Resource" id="p4"]
+script = ExtResource("2")
+enter = 40
+hold = 40
+leave = 40
+curve = 0
+hill = -600
+scenery = 0.5
+
+[sub_resource type="Resource" id="p5"]
+script = ExtResource("2")
+enter = 20
+hold = 30
+leave = 20
+curve = 4
+hill = 0
+scenery = 1
+
+[sub_resource type="Resource" id="p6"]
+script = ExtResource("2")
+enter = 30
+hold = 30
+leave = 30
+curve = 0
+hill = 0
+scenery = 1.5
+
+[sub_resource type="Resource" id="p7"]
+script = ExtResource("2")
+enter = 20
+hold = 50
+leave = 20
+curve = -2
+hill = 900
+scenery = 1
+
+[sub_resource type="Resource" id="p8"]
+script = ExtResource("2")
+enter = 30
+hold = 40
+leave = 30
+curve = 0
+hill = -900
+scenery = 1
+
+[sub_resource type="Resource" id="p9"]
+script = ExtResource("2")
+enter = 20
+hold = 20
+leave = 20
+curve = 1.5
+hill = 0
+scenery = 1
+
+[resource]
+script = ExtResource("1")
+id = &"coast"
+display_name = "Coast Run"
+description = "Palms, sea breeze and long sweeping curves."
+laps = 3
+background = ExtResource("3")
+pieces = Array[ExtResource("2")]([SubResource("p0"), SubResource("p1"), SubResource("p2"), SubResource("p3"), SubResource("p4"), SubResource("p5"), SubResource("p6"), SubResource("p7"), SubResource("p8"), SubResource("p9")])
+scenery_sprites = Array[Texture2D]([ExtResource("4"), ExtResource("5"), ExtResource("6"), ExtResource("7"), ExtResource("8")])
+scenery_density = 2.5
+seed = 101
+sky_color = Color(0.3373, 0.7608, 1.0000, 1)
+fog_color = Color(0.6235, 0.8784, 1.0000, 1)
+road_light = Color(0.4314, 0.4314, 0.5020, 1)
+road_dark = Color(0.4000, 0.4000, 0.4784, 1)
+grass_light = Color(0.9137, 0.8510, 0.6039, 1)
+grass_dark = Color(0.8510, 0.7804, 0.5176, 1)
+rumble_light = Color(0.9647, 0.9647, 0.9647, 1)
+rumble_dark = Color(0.8863, 0.2275, 0.2275, 1)
+lane_color = Color(0.9647, 0.9647, 0.9647, 1)
+music = &"race_a"
+prizes = Array[int]([1200, 800, 600, 450, 300, 200, 100, 50])

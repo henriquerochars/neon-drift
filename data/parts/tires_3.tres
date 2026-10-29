@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PartDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://src/data/part_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"tires_3"
+slot = &"tires"
+tier = 3
+display_name = "Grip Pro"
+description = "Tires tier 3."
+price = 1600
+rank_bonus = 2.0

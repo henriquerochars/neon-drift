@@ -1,0 +1,9 @@
+== gdformat --check
+84 files would be left unchanged
+== gdlint
+Success: no problems found
+== check_layers
+check_layers: OK
+== check_record
+PASS: record maps 19 source areas and the docs indexes
+Lint OK

@@ -1,0 +1,43 @@
+== import
+== tests
+Run Test Suite: res://tests/qa/profile_flow_qa_test.gd
+Statistics: 3 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 1s 232ms
+Run Test Suite: res://tests/qa/race_contract_bug_test.gd
+  res://tests/qa/race_contract_bug_test.gd > test_countdown_place_is_one_based FAILED 8ms
+  res://tests/qa/race_contract_bug_test.gd > test_authoritative_finish_replaces_predicted_client_finish FAILED 8ms
+Statistics: 2 test cases | 0 errors | 3 failures | 0 flaky | 0 skipped | 0 orphans | FAILED 22ms
+Run Test Suite: res://tests/unit/ui/results_test.gd
+Statistics: 2 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 22ms
+Run Test Suite: res://tests/unit/ui/hud_test.gd
+Statistics: 4 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 1s 244ms
+Run Test Suite: res://tests/unit/audio/audio_director_test.gd
+Statistics: 8 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 192ms
+Run Test Suite: res://tests/unit/race/race_scene_test.gd
+Statistics: 3 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 3s 479ms
+Run Test Suite: res://tests/unit/race/contact_test.gd
+Statistics: 3 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 25ms
+Run Test Suite: res://tests/unit/sim/track_model_test.gd
+Statistics: 5 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 27ms
+Run Test Suite: res://tests/unit/sim/car_sim_test.gd
+Statistics: 9 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 41ms
+Run Test Suite: res://tests/unit/ai/ai_driver_test.gd
+Statistics: 3 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 209ms
+Run Test Suite: res://tests/unit/core/profile_settings_test.gd
+Statistics: 2 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 10ms
+Run Test Suite: res://tests/unit/road/pseudo_road_test.gd
+Statistics: 3 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 17ms
+Run Test Suite: res://tests/unit/data/catalog_test.gd
+Statistics: 5 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 19ms
+Run Test Suite: res://tests/integration/ui/screen_flow_test.gd
+Statistics: 3 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 92ms
+Run Test Suite: res://tests/integration/net/race_sync_test.gd
+Statistics: 6 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 829ms
+Run Test Suite: res://tests/integration/net/net_session_test.gd
+Statistics: 8 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 629ms
+Overall Summary: 69 test cases | 0 errors | 3 failures | 0 flaky | 0 skipped | 0 orphans |
+Executed test suites: (16/16)
+Executed test cases : (69/69)
+FAIL: test run exited 100 (see artifacts/tests.stdout.log)
+FAIL: tests log has engine errors:
+ERROR: 4 resources still in use at exit (run with --verbose for details).
+FAILED

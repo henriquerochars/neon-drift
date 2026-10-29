@@ -1,0 +1,235 @@
+{
+ "frames": [
+  {
+   "filename": "neon-drift-nitro-flame 0.png",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 72,
+    "h": 31
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 72,
+    "h": 31
+   },
+   "sourceSize": {
+    "w": 72,
+    "h": 31
+   },
+   "pivot": {
+    "x": 0.09722222222222222,
+    "y": 0.4838709677419355
+   },
+   "duration": 83
+  },
+  {
+   "filename": "neon-drift-nitro-flame 1.png",
+   "frame": {
+    "x": 72,
+    "y": 0,
+    "w": 72,
+    "h": 31
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 72,
+    "h": 31
+   },
+   "sourceSize": {
+    "w": 72,
+    "h": 31
+   },
+   "pivot": {
+    "x": 0.09722222222222222,
+    "y": 0.4838709677419355
+   },
+   "duration": 83
+  },
+  {
+   "filename": "neon-drift-nitro-flame 2.png",
+   "frame": {
+    "x": 144,
+    "y": 0,
+    "w": 72,
+    "h": 31
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 72,
+    "h": 31
+   },
+   "sourceSize": {
+    "w": 72,
+    "h": 31
+   },
+   "pivot": {
+    "x": 0.09722222222222222,
+    "y": 0.4838709677419355
+   },
+   "duration": 83
+  },
+  {
+   "filename": "neon-drift-nitro-flame 3.png",
+   "frame": {
+    "x": 0,
+    "y": 31,
+    "w": 72,
+    "h": 31
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 72,
+    "h": 31
+   },
+   "sourceSize": {
+    "w": 72,
+    "h": 31
+   },
+   "pivot": {
+    "x": 0.09722222222222222,
+    "y": 0.4838709677419355
+   },
+   "duration": 83
+  },
+  {
+   "filename": "neon-drift-nitro-flame 4.png",
+   "frame": {
+    "x": 72,
+    "y": 31,
+    "w": 72,
+    "h": 31
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 72,
+    "h": 31
+   },
+   "sourceSize": {
+    "w": 72,
+    "h": 31
+   },
+   "pivot": {
+    "x": 0.09722222222222222,
+    "y": 0.4838709677419355
+   },
+   "duration": 83
+  },
+  {
+   "filename": "neon-drift-nitro-flame 5.png",
+   "frame": {
+    "x": 144,
+    "y": 31,
+    "w": 72,
+    "h": 31
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 72,
+    "h": 31
+   },
+   "sourceSize": {
+    "w": 72,
+    "h": 31
+   },
+   "pivot": {
+    "x": 0.09722222222222222,
+    "y": 0.4838709677419355
+   },
+   "duration": 83
+  },
+  {
+   "filename": "neon-drift-nitro-flame 6.png",
+   "frame": {
+    "x": 0,
+    "y": 62,
+    "w": 72,
+    "h": 31
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 72,
+    "h": 31
+   },
+   "sourceSize": {
+    "w": 72,
+    "h": 31
+   },
+   "pivot": {
+    "x": 0.09722222222222222,
+    "y": 0.4838709677419355
+   },
+   "duration": 83
+  },
+  {
+   "filename": "neon-drift-nitro-flame 7.png",
+   "frame": {
+    "x": 72,
+    "y": 62,
+    "w": 72,
+    "h": 31
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 72,
+    "h": 31
+   },
+   "sourceSize": {
+    "w": 72,
+    "h": 31
+   },
+   "pivot": {
+    "x": 0.09722222222222222,
+    "y": 0.4838709677419355
+   },
+   "duration": 83
+  }
+ ],
+ "meta": {
+  "app": "PixelLab VFX Creator",
+  "image": "neon-drift-nitro-flame.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 216,
+   "h": 93
+  },
+  "scale": "1",
+  "anchor": {
+   "kind": "origin",
+   "x": 7,
+   "y": 15
+  },
+  "frameTags": [
+   {
+    "name": "neon-drift-nitro-flame",
+    "from": 0,
+    "to": 7,
+    "direction": "forward"
+   }
+  ]
+ }
+}
