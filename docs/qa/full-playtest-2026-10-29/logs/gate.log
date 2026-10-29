@@ -1,0 +1,109 @@
+baseline: main merge-base 4d6aadc12065 (HEAD 4d6aadc12065)
+changed files: 1570
+checks: harness, record, toolchain, lint, balance, art, godot-tests
+fingerprint: 5afc40496793…
+== harness
+$ python3 tools/check_harness.py
+harness OK
+$ python3 -m unittest discover -s tools/agent/tests
+............................................................................................................................
+----------------------------------------------------------------------
+Ran 124 tests in 3.015s
+
+OK
+$ python3 -m unittest discover -s tools/agent_hooks/tests
+.....................................................................
+----------------------------------------------------------------------
+Ran 69 tests in 1.401s
+
+OK
+== harness: exit 0 in 4.6s
+== record
+$ python3 tools/agent/check_record.py
+PASS: record maps 19 source areas and the docs indexes
+== record: exit 0 in 0.0s
+== toolchain
+$ bash tools/test_toolchain.sh
+== bash -n tools/*.sh
+== python compile
+== godot version
+   4.7.2.stable.official.ed1daf0bf
+== export presets
+toolchain OK
+== toolchain: exit 0 in 0.0s
+== lint
+$ tools/lint.sh
+== gdformat --check
+84 files would be left unchanged
+== gdlint
+Success: no problems found
+== check_layers
+check_layers: OK
+== check_record
+PASS: record maps 19 source areas and the docs indexes
+Lint OK
+== lint: exit 0 in 2.3s
+== balance
+$ python3 tools/data/check_balance.py
+balance OK
+== balance: exit 0 in 0.0s
+== art
+$ python3 tools/art/validate.py
+art OK
+== art: exit 0 in 0.0s
+== godot-tests
+$ tools/test.sh
+== import
+== tests
+Run Test Suite: res://tests/qa/profile_flow_qa_test.gd
+Statistics: 3 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 1s 187ms
+Run Test Suite: res://tests/qa/race_contract_bug_test.gd
+  res://tests/qa/race_contract_bug_test.gd > test_countdown_place_is_one_based FAILED 7ms
+  res://tests/qa/race_contract_bug_test.gd > test_authoritative_finish_replaces_predicted_client_finish FAILED 8ms
+Statistics: 2 test cases | 0 errors | 3 failures | 0 flaky | 0 skipped | 0 orphans | FAILED 21ms
+Run Test Suite: res://tests/unit/ui/results_test.gd
+Statistics: 2 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 23ms
+Run Test Suite: res://tests/unit/ui/hud_test.gd
+Statistics: 4 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 1s 242ms
+Run Test Suite: res://tests/unit/audio/audio_director_test.gd
+Statistics: 8 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 200ms
+Run Test Suite: res://tests/unit/race/race_scene_test.gd
+Statistics: 3 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 3s 438ms
+Run Test Suite: res://tests/unit/race/contact_test.gd
+Statistics: 3 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 29ms
+Run Test Suite: res://tests/unit/sim/track_model_test.gd
+Statistics: 5 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 29ms
+Run Test Suite: res://tests/unit/sim/car_sim_test.gd
+Statistics: 9 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 43ms
+Run Test Suite: res://tests/unit/ai/ai_driver_test.gd
+Statistics: 3 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 213ms
+Run Test Suite: res://tests/unit/core/profile_settings_test.gd
+Statistics: 2 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 10ms
+Run Test Suite: res://tests/unit/road/pseudo_road_test.gd
+Statistics: 3 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 23ms
+Run Test Suite: res://tests/unit/data/catalog_test.gd
+Statistics: 5 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 22ms
+Run Test Suite: res://tests/integration/ui/screen_flow_test.gd
+Statistics: 3 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 93ms
+Run Test Suite: res://tests/integration/net/race_sync_test.gd
+Statistics: 6 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 851ms
+Run Test Suite: res://tests/integration/net/net_session_test.gd
+Statistics: 8 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 629ms
+Overall Summary: 69 test cases | 0 errors | 3 failures | 0 flaky | 0 skipped | 0 orphans |
+Executed test suites: (16/16)
+Executed test cases : (69/69)
+FAIL: test run exited 100 (see artifacts/tests.stdout.log)
+FAIL: tests log has engine errors:
+ERROR: 4 resources still in use at exit (run with --verbose for details).
+FAILED
+== godot-tests: exit 1 in 10.9s
+step           exit   seconds  log
+harness           0       4.6  .neondrift/gate/logs/5afc404967933f1d4e45922214d255a724770bc517d5bb15d666c4409a64050c/harness.log
+record            0       0.0  .neondrift/gate/logs/5afc404967933f1d4e45922214d255a724770bc517d5bb15d666c4409a64050c/record.log
+toolchain         0       0.0  .neondrift/gate/logs/5afc404967933f1d4e45922214d255a724770bc517d5bb15d666c4409a64050c/toolchain.log
+lint              0       2.3  .neondrift/gate/logs/5afc404967933f1d4e45922214d255a724770bc517d5bb15d666c4409a64050c/lint.log
+balance           0       0.0  .neondrift/gate/logs/5afc404967933f1d4e45922214d255a724770bc517d5bb15d666c4409a64050c/balance.log
+art               0       0.0  .neondrift/gate/logs/5afc404967933f1d4e45922214d255a724770bc517d5bb15d666c4409a64050c/art.log
+godot-tests       1      10.9  .neondrift/gate/logs/5afc404967933f1d4e45922214d255a724770bc517d5bb15d666c4409a64050c/godot-tests.log
+receipt: .neondrift/gate/receipts/5afc404967933f1d4e45922214d255a724770bc517d5bb15d666c4409a64050c.json
+gate: fail (5afc40496793…)

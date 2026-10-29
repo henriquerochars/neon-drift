@@ -1,0 +1,21 @@
+{
+	"screens": [
+		"title",
+		"menu",
+		"garage",
+		"options",
+		"options_controls",
+		"select_car",
+		"select_track",
+		"lobby_connect",
+		"lobby_host",
+		"hud",
+		"pause",
+		"results"
+	],
+	"seed": 271029,
+	"viewport": [
+		320,
+		180
+	]
+}

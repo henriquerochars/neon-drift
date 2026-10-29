@@ -1,0 +1,332 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+
+--------------------------------------------------------------------------------------------------
+GdUnit4 Comandline Tool
+--------------------------------------------------------------------------------------------------
+Disabled fail fast!
+Set write reports to /home/user/neon-drift-qa/artifacts/reports
+
+Headless mode is ignored by option '--ignoreHeadlessMode'"
+
+Please note that tests that use UI interaction do not work correctly in headless mode.
+Godot 'InputEvents' are not transported by the Godot engine in headless mode and therefore
+have no effect in the test!
+
+Scanning for test suites in: res://tests
+Installing GdUnit4 session system hooks.
+Session hook 'GdUnitHtmlTestReporter' installed.
+Session hook 'GdUnitXMLTestReporter' installed.
+Run Test Suite: res://tests/qa/profile_flow_qa_test.gd
+  res://tests/qa/profile_flow_qa_test.gd > test_all_tiers_paint_repair_and_profile_round_trip STARTED
+  res://tests/qa/profile_flow_qa_test.gd > test_all_tiers_paint_repair_and_profile_round_trip PASSED 40ms
+
+  res://tests/qa/profile_flow_qa_test.gd > test_settings_round_trip STARTED
+  res://tests/qa/profile_flow_qa_test.gd > test_settings_round_trip PASSED 7ms
+
+  res://tests/qa/profile_flow_qa_test.gd > test_solo_reaches_results_and_persists_earnings STARTED
+  res://tests/qa/profile_flow_qa_test.gd > test_solo_reaches_results_and_persists_earnings PASSED 1s 173ms
+
+Statistics: 3 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 1s 232ms
+
+
+Run Test Suite: res://tests/qa/race_contract_bug_test.gd
+  res://tests/qa/race_contract_bug_test.gd > test_countdown_place_is_one_based STARTED
+  res://tests/qa/race_contract_bug_test.gd > test_countdown_place_is_one_based FAILED 8ms
+  Report:
+  Expecting to be greater than:
+ 0 but was 0	at 'test_countdown_place_is_one_based' in res://tests/qa/race_contract_bug_test.gd:20
+
+  res://tests/qa/race_contract_bug_test.gd > test_authoritative_finish_replaces_predicted_client_finish STARTED
+  res://tests/qa/race_contract_bug_test.gd > test_authoritative_finish_replaces_predicted_client_finish FAILED 8ms
+  Report:
+  Expecting:
+ 2
+ but was
+ 1	at 'test_authoritative_finish_replaces_predicted_client_finish' in res://tests/qa/race_contract_bug_test.gd:32  Expecting:
+ 70.000000
+ but was
+ 0.000000	at 'test_authoritative_finish_replaces_predicted_client_finish' in res://tests/qa/race_contract_bug_test.gd:33
+
+Statistics: 2 test cases | 0 errors | 3 failures | 0 flaky | 0 skipped | 0 orphans | FAILED 22ms
+
+
+Run Test Suite: res://tests/unit/ui/results_test.gd
+  res://tests/unit/ui/results_test.gd > test_present_records_earnings_and_integrity STARTED
+  res://tests/unit/ui/results_test.gd > test_present_records_earnings_and_integrity PASSED 8ms
+
+  res://tests/unit/ui/results_test.gd > test_enter_with_args_counts_a_win_and_online_shows_the_room_button STARTED
+  res://tests/unit/ui/results_test.gd > test_enter_with_args_counts_a_win_and_online_shows_the_room_button PASSED 8ms
+
+Statistics: 2 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 22ms
+
+
+Run Test Suite: res://tests/unit/ui/hud_test.gd
+  res://tests/unit/ui/hud_test.gd > test_refresh_reads_the_contract STARTED
+  res://tests/unit/ui/hud_test.gd > test_refresh_reads_the_contract PASSED 6ms
+
+  res://tests/unit/ui/hud_test.gd > test_countdown_and_go_flash STARTED
+  res://tests/unit/ui/hud_test.gd > test_countdown_and_go_flash PASSED 1s 214ms
+
+  res://tests/unit/ui/hud_test.gd > test_lap_crush_landing_and_finish_react_only_to_the_local_car STARTED
+  res://tests/unit/ui/hud_test.gd > test_lap_crush_landing_and_finish_react_only_to_the_local_car PASSED 8ms
+
+  res://tests/unit/ui/hud_test.gd > test_text_helpers STARTED
+  res://tests/unit/ui/hud_test.gd > test_text_helpers PASSED 5ms
+
+Statistics: 4 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 1s 244ms
+
+
+Run Test Suite: res://tests/unit/audio/audio_director_test.gd
+  res://tests/unit/audio/audio_director_test.gd > test_every_manifest_entry_loads_as_audio_stream STARTED
+  res://tests/unit/audio/audio_director_test.gd > test_every_manifest_entry_loads_as_audio_stream PASSED 3ms
+
+  res://tests/unit/audio/audio_director_test.gd > test_loop_flags_match_import_files STARTED
+  res://tests/unit/audio/audio_director_test.gd > test_loop_flags_match_import_files PASSED 4ms
+
+  res://tests/unit/audio/audio_director_test.gd > test_unknown_sfx_does_not_crash STARTED
+WARNING: AudioDirector: no stream named does_not_exist
+   at: push_warning (core/variant/variant_utility.cpp:1033)
+   GDScript backtrace (most recent call first):
+       [0] _stream_for (res://src/audio/audio_director.gd:281)
+       [1] play_sfx (res://src/audio/audio_director.gd:161)
+       [2] test_unknown_sfx_does_not_crash (res://tests/unit/audio/audio_director_test.gd:78)
+       [3] _execute_test_case (res://addons/gdUnit4/src/core/_TestCase.gd:79)
+       [4] execute (res://addons/gdUnit4/src/core/_TestCase.gd:40)
+       [5] _execute (res://addons/gdUnit4/src/core/execution/stages/single/GdUnitTestCaseSingleTestStage.gd:10)
+       [6] execute (res://addons/gdUnit4/src/core/execution/stages/IGdUnitExecutionStage.gd:19)
+       [7] _execute (res://addons/gdUnit4/src/core/execution/stages/single/GdUnitTestCaseSingleExecutionStage.gd:17)
+       [8] execute (res://addons/gdUnit4/src/core/execution/stages/IGdUnitExecutionStage.gd:19)
+       [9] _execute (res://addons/gdUnit4/src/core/execution/stages/GdUnitTestCaseExecutionStage.gd:26)
+       [10] execute (res://addons/gdUnit4/src/core/execution/stages/IGdUnitExecutionStage.gd:19)
+       [11] _execute (res://addons/gdUnit4/src/core/execution/stages/GdUnitTestSuiteExecutionStage.gd:36)
+       [12] execute (res://addons/gdUnit4/src/core/execution/stages/IGdUnitExecutionStage.gd:19)
+       [13] _execute (res://addons/gdUnit4/src/core/execution/stages/GdUnitTestCaseExecutionStage.gd:35)
+       [14] execute (res://addons/gdUnit4/src/core/execution/stages/IGdUnitExecutionStage.gd:19)
+       [15] _execute (res://addons/gdUnit4/src/core/execution/stages/single/GdUnitTestCaseSingleExecutionStage.gd:28)
+       [16] execute (res://addons/gdUnit4/src/core/execution/stages/IGdUnitExecutionStage.gd:19)
+       [17] _execute (res://addons/gdUnit4/src/core/execution/stages/single/GdUnitTestCaseSingleTestStage.gd:10)
+       [18] execute (res://addons/gdUnit4/src/core/_TestCase.gd:41)
+       [19] test_completed (res://addons/gdUnit4/src/core/_TestCase.gd:86)
+  res://tests/unit/audio/audio_director_test.gd > test_unknown_sfx_does_not_crash PASSED 2ms
+
+  res://tests/unit/audio/audio_director_test.gd > test_nitro_signal_plays_a_pool_player STARTED
+  res://tests/unit/audio/audio_director_test.gd > test_nitro_signal_plays_a_pool_player PASSED 2ms
+
+  res://tests/unit/audio/audio_director_test.gd > test_signals_map_to_sfx_names STARTED
+  res://tests/unit/audio/audio_director_test.gd > test_signals_map_to_sfx_names PASSED 7ms
+
+  res://tests/unit/audio/audio_director_test.gd > test_lap_and_finish_follow_the_local_id STARTED
+  res://tests/unit/audio/audio_director_test.gd > test_lap_and_finish_follow_the_local_id PASSED 3ms
+
+  res://tests/unit/audio/audio_director_test.gd > test_music_follows_screens_and_race_phases STARTED
+  res://tests/unit/audio/audio_director_test.gd > test_music_follows_screens_and_race_phases PASSED 4ms
+
+  res://tests/unit/audio/audio_director_test.gd > test_engine_and_offroad_loops STARTED
+  res://tests/unit/audio/audio_director_test.gd > test_engine_and_offroad_loops PASSED 3ms
+
+Statistics: 8 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 192ms
+
+
+Run Test Suite: res://tests/unit/race/race_scene_test.gd
+  res://tests/unit/race/race_scene_test.gd > test_countdown_then_racing STARTED
+  res://tests/unit/race/race_scene_test.gd > test_countdown_then_racing PASSED 10ms
+
+  res://tests/unit/race/race_scene_test.gd > test_seeded_ai_race_finishes_with_unique_places STARTED
+  res://tests/unit/race/race_scene_test.gd > test_seeded_ai_race_finishes_with_unique_places PASSED 1s 159ms
+
+  res://tests/unit/race/race_scene_test.gd > test_same_seed_gives_the_same_places STARTED
+  res://tests/unit/race/race_scene_test.gd > test_same_seed_gives_the_same_places PASSED 2s 297ms
+
+Statistics: 3 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 3s 479ms
+
+
+Run Test Suite: res://tests/unit/race/contact_test.gd
+  res://tests/unit/race/contact_test.gd > test_landing_on_a_car_crushes_it STARTED
+  res://tests/unit/race/contact_test.gd > test_landing_on_a_car_crushes_it PASSED 7ms
+
+  res://tests/unit/race/contact_test.gd > test_side_by_side_cars_bump_once STARTED
+  res://tests/unit/race/contact_test.gd > test_side_by_side_cars_bump_once PASSED 6ms
+
+  res://tests/unit/race/contact_test.gd > test_client_does_not_resolve_contacts_but_applies_penalties STARTED
+  res://tests/unit/race/contact_test.gd > test_client_does_not_resolve_contacts_but_applies_penalties PASSED 6ms
+
+Statistics: 3 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 25ms
+
+
+Run Test Suite: res://tests/unit/sim/track_model_test.gd
+  res://tests/unit/sim/track_model_test.gd > test_coast_expands_to_its_pieces STARTED
+  res://tests/unit/sim/track_model_test.gd > test_coast_expands_to_its_pieces PASSED 3ms
+
+  res://tests/unit/sim/track_model_test.gd > test_curve_eases_in_and_out STARTED
+  res://tests/unit/sim/track_model_test.gd > test_curve_eases_in_and_out PASSED 3ms
+
+  res://tests/unit/sim/track_model_test.gd > test_every_track_returns_to_its_start_height STARTED
+  res://tests/unit/sim/track_model_test.gd > test_every_track_returns_to_its_start_height PASSED 3ms
+
+  res://tests/unit/sim/track_model_test.gd > test_scenery_is_deterministic_for_the_seed STARTED
+  res://tests/unit/sim/track_model_test.gd > test_scenery_is_deterministic_for_the_seed PASSED 7ms
+
+  res://tests/unit/sim/track_model_test.gd > test_wrap_and_segment_index STARTED
+  res://tests/unit/sim/track_model_test.gd > test_wrap_and_segment_index PASSED 2ms
+
+Statistics: 5 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 27ms
+
+
+Run Test Suite: res://tests/unit/sim/car_sim_test.gd
+  res://tests/unit/sim/car_sim_test.gd > test_full_throttle_reaches_top_speed_and_stays_there STARTED
+  res://tests/unit/sim/car_sim_test.gd > test_full_throttle_reaches_top_speed_and_stays_there PASSED 4ms
+
+  res://tests/unit/sim/car_sim_test.gd > test_nitro_raises_top_speed_then_runs_out STARTED
+  res://tests/unit/sim/car_sim_test.gd > test_nitro_raises_top_speed_then_runs_out PASSED 5ms
+
+  res://tests/unit/sim/car_sim_test.gd > test_jump_rises_and_lands_recharging_thrusters STARTED
+  res://tests/unit/sim/car_sim_test.gd > test_jump_rises_and_lands_recharging_thrusters PASSED 3ms
+
+  res://tests/unit/sim/car_sim_test.gd > test_cannot_jump_without_full_thrusters STARTED
+  res://tests/unit/sim/car_sim_test.gd > test_cannot_jump_without_full_thrusters PASSED 3ms
+
+  res://tests/unit/sim/car_sim_test.gd > test_crossing_the_finish_line_counts_a_lap STARTED
+  res://tests/unit/sim/car_sim_test.gd > test_crossing_the_finish_line_counts_a_lap PASSED 3ms
+
+  res://tests/unit/sim/car_sim_test.gd > test_offroad_slows_the_car_and_reports_it STARTED
+  res://tests/unit/sim/car_sim_test.gd > test_offroad_slows_the_car_and_reports_it PASSED 2ms
+
+  res://tests/unit/sim/car_sim_test.gd > test_crush_hurts_victim_more_than_jumper STARTED
+  res://tests/unit/sim/car_sim_test.gd > test_crush_hurts_victim_more_than_jumper PASSED 2ms
+
+  res://tests/unit/sim/car_sim_test.gd > test_overlap_wraps_around_the_track STARTED
+  res://tests/unit/sim/car_sim_test.gd > test_overlap_wraps_around_the_track PASSED 2ms
+
+  res://tests/unit/sim/car_sim_test.gd > test_bump_pushes_cars_apart STARTED
+  res://tests/unit/sim/car_sim_test.gd > test_bump_pushes_cars_apart PASSED 2ms
+
+Statistics: 9 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 41ms
+
+
+Run Test Suite: res://tests/unit/ai/ai_driver_test.gd
+  res://tests/unit/ai/ai_driver_test.gd > test_completes_a_lap_on_every_track_mostly_on_the_road STARTED
+  res://tests/unit/ai/ai_driver_test.gd > test_completes_a_lap_on_every_track_mostly_on_the_road PASSED 116ms
+
+  res://tests/unit/ai/ai_driver_test.gd > test_same_seed_drives_the_same_line STARTED
+  res://tests/unit/ai/ai_driver_test.gd > test_same_seed_drives_the_same_line PASSED 83ms
+
+  res://tests/unit/ai/ai_driver_test.gd > test_jumps_a_slower_car_in_its_lane STARTED
+  res://tests/unit/ai/ai_driver_test.gd > test_jumps_a_slower_car_in_its_lane PASSED 3ms
+
+Statistics: 3 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 209ms
+
+
+Run Test Suite: res://tests/unit/core/profile_settings_test.gd
+  res://tests/unit/core/profile_settings_test.gd > test_profile_buy_repair_and_round_trip STARTED
+  res://tests/unit/core/profile_settings_test.gd > test_profile_buy_repair_and_round_trip PASSED 3ms
+
+  res://tests/unit/core/profile_settings_test.gd > test_settings_round_trip_and_name_sanitising STARTED
+  res://tests/unit/core/profile_settings_test.gd > test_settings_round_trip_and_name_sanitising PASSED 3ms
+
+Statistics: 2 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 10ms
+
+
+Run Test Suite: res://tests/unit/road/pseudo_road_test.gd
+  res://tests/unit/road/pseudo_road_test.gd > test_point_one_segment_ahead_projects_inside_the_viewport STARTED
+  res://tests/unit/road/pseudo_road_test.gd > test_point_one_segment_ahead_projects_inside_the_viewport PASSED 3ms
+
+  res://tests/unit/road/pseudo_road_test.gd > test_farther_points_have_smaller_scale_and_rise_to_the_horizon STARTED
+  res://tests/unit/road/pseudo_road_test.gd > test_farther_points_have_smaller_scale_and_rise_to_the_horizon PASSED 3ms
+
+  res://tests/unit/road/pseudo_road_test.gd > test_refresh_places_cars_and_scenery_sprites STARTED
+  res://tests/unit/road/pseudo_road_test.gd > test_refresh_places_cars_and_scenery_sprites PASSED 4ms
+
+Statistics: 3 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 17ms
+
+
+Run Test Suite: res://tests/unit/data/catalog_test.gd
+  res://tests/unit/data/catalog_test.gd > test_five_cars_with_eight_rotations_each STARTED
+  res://tests/unit/data/catalog_test.gd > test_five_cars_with_eight_rotations_each PASSED 3ms
+
+  res://tests/unit/data/catalog_test.gd > test_parts_cover_every_slot_with_three_tiers STARTED
+  res://tests/unit/data/catalog_test.gd > test_parts_cover_every_slot_with_three_tiers PASSED 2ms
+
+  res://tests/unit/data/catalog_test.gd > test_three_tracks_with_background_and_scenery STARTED
+  res://tests/unit/data/catalog_test.gd > test_three_tracks_with_background_and_scenery PASSED 2ms
+
+  res://tests/unit/data/catalog_test.gd > test_parts_improve_stats STARTED
+  res://tests/unit/data/catalog_test.gd > test_parts_improve_stats PASSED 2ms
+
+  res://tests/unit/data/catalog_test.gd > test_balance_has_the_physics_keys STARTED
+  res://tests/unit/data/catalog_test.gd > test_balance_has_the_physics_keys PASSED 2ms
+
+Statistics: 5 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 19ms
+
+
+Run Test Suite: res://tests/integration/ui/screen_flow_test.gd
+  res://tests/integration/ui/screen_flow_test.gd > test_title_to_menu_options_garage_select_and_race STARTED
+  res://tests/integration/ui/screen_flow_test.gd > test_title_to_menu_options_garage_select_and_race PASSED 58ms
+
+  res://tests/integration/ui/screen_flow_test.gd > test_lobby_opens_a_room_preview_without_the_net_lane STARTED
+  res://tests/integration/ui/screen_flow_test.gd > test_lobby_opens_a_room_preview_without_the_net_lane PASSED 23ms
+
+  res://tests/integration/ui/screen_flow_test.gd > test_online_race_config_marks_the_local_seat STARTED
+  res://tests/integration/ui/screen_flow_test.gd > test_online_race_config_marks_the_local_seat PASSED 4ms
+
+Statistics: 3 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 92ms
+
+
+Run Test Suite: res://tests/integration/net/race_sync_test.gd
+  res://tests/integration/net/race_sync_test.gd > test_attach_tells_each_race_who_is_authority STARTED
+  res://tests/integration/net/race_sync_test.gd > test_attach_tells_each_race_who_is_authority PASSED 33ms
+
+  res://tests/integration/net/race_sync_test.gd > test_client_state_reaches_the_host_with_the_same_values STARTED
+  res://tests/integration/net/race_sync_test.gd > test_client_state_reaches_the_host_with_the_same_values PASSED 82ms
+
+  res://tests/integration/net/race_sync_test.gd > test_remote_states_interpolate_between_packets STARTED
+  res://tests/integration/net/race_sync_test.gd > test_remote_states_interpolate_between_packets PASSED 171ms
+
+  res://tests/integration/net/race_sync_test.gd > test_peer_may_only_publish_its_own_id STARTED
+  res://tests/integration/net/race_sync_test.gd > test_peer_may_only_publish_its_own_id PASSED 233ms
+
+  res://tests/integration/net/race_sync_test.gd > test_host_penalty_is_relayed_to_the_owning_peer_only STARTED
+  res://tests/integration/net/race_sync_test.gd > test_host_penalty_is_relayed_to_the_owning_peer_only PASSED 247ms
+
+  res://tests/integration/net/race_sync_test.gd > test_host_phase_countdown_and_finish_propagate STARTED
+  res://tests/integration/net/race_sync_test.gd > test_host_phase_countdown_and_finish_propagate PASSED 47ms
+
+Statistics: 6 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 829ms
+
+
+Run Test Suite: res://tests/integration/net/net_session_test.gd
+  res://tests/integration/net/net_session_test.gd > test_host_binds_ephemeral_port_and_takes_seat_zero STARTED
+  res://tests/integration/net/net_session_test.gd > test_host_binds_ephemeral_port_and_takes_seat_zero PASSED 4ms
+
+  res://tests/integration/net/net_session_test.gd > test_client_joins_and_both_sides_see_two_named_seats STARTED
+  res://tests/integration/net/net_session_test.gd > test_client_joins_and_both_sides_see_two_named_seats PASSED 41ms
+
+  res://tests/integration/net/net_session_test.gd > test_client_ready_and_profile_changes_reach_the_host STARTED
+  res://tests/integration/net/net_session_test.gd > test_client_ready_and_profile_changes_reach_the_host PASSED 82ms
+
+  res://tests/integration/net/net_session_test.gd > test_extra_peer_is_rejected_when_room_is_full STARTED
+  res://tests/integration/net/net_session_test.gd > test_extra_peer_is_rejected_when_room_is_full PASSED 240ms
+
+  res://tests/integration/net/net_session_test.gd > test_request_start_gives_every_peer_the_same_seed STARTED
+  res://tests/integration/net/net_session_test.gd > test_request_start_gives_every_peer_the_same_seed PASSED 60ms
+
+  res://tests/integration/net/net_session_test.gd > test_client_leave_frees_its_seat_on_the_host STARTED
+  res://tests/integration/net/net_session_test.gd > test_client_leave_frees_its_seat_on_the_host PASSED 61ms
+
+  res://tests/integration/net/net_session_test.gd > test_kick_drops_the_client STARTED
+  res://tests/integration/net/net_session_test.gd > test_kick_drops_the_client PASSED 61ms
+
+  res://tests/integration/net/net_session_test.gd > test_host_leave_disconnects_the_client STARTED
+  res://tests/integration/net/net_session_test.gd > test_host_leave_disconnects_the_client PASSED 61ms
+
+Statistics: 8 test cases | 0 errors | 0 failures | 0 flaky | 0 skipped | 0 orphans | PASSED 629ms
+
+
+Overall Summary: 69 test cases | 0 errors | 3 failures | 0 flaky | 0 skipped | 0 orphans |
+Executed test suites: (16/16)
+Executed test cases : (69/69)
+Total execution time: 8s 89ms
+ Open XML Report at: file:///home/user/neon-drift-qa/artifacts/reports/report_1/results.xml
+Open HTML Report at: file:///home/user/neon-drift-qa/artifacts/reports/report_1/index.html
+Exit code: 100
+Run dispose test resources

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="CarDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://src/data/car_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"phantom"
+display_name = "Phantom"
+description = "Nitro specialist. Blue fire out the back, thin skin."
+sprite_dir = "res://art/cars/phantom"
+base_color = Color(0.7843, 0.8000, 0.8471, 1)
+top_speed_rank = 4
+acceleration_rank = 3
+handling_rank = 2
+nitro_rank = 5
+thruster_rank = 2
+armour_rank = 2

@@ -1,0 +1,7 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+{"bumps":19,"crushes":5,"finished":true,"max_offroad_ticks":230,"results":[{"car_id":"hornet","earnings":1200,"finished":true,"id":7,"name":"AI 7","place":1,"time":63.583333333331},{"car_id":"vortex","earnings":800,"finished":true,"id":5,"name":"AI 5","place":2,"time":68.3499999999974},{"car_id":"hornet","earnings":600,"finished":true,"id":2,"name":"AI 2","place":3,"time":68.4333333333307},{"car_id":"bruiser","earnings":450,"finished":true,"id":6,"name":"AI 6","place":4,"time":69.4499999999973},{"car_id":"phantom","earnings":300,"finished":true,"id":3,"name":"AI 3","place":5,"time":70.8666666666639},{"car_id":"mirage","earnings":200,"finished":true,"id":4,"name":"AI 4","place":6,"time":70.9166666666639},{"car_id":"vortex","earnings":100,"finished":true,"id":0,"name":"AI 0","place":7,"time":71.6166666666639},{"car_id":"bruiser","earnings":50,"finished":true,"id":1,"name":"AI 1","place":8,"time":78.7333333333302}],"scenery_hits":3,"seed":2,"ticks":4905,"track":"coast"}
+WARNING: 30 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 8 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:822)

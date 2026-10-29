@@ -1,0 +1,842 @@
+[
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 0
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 4
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 8
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 12
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 16
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 20
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 24
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 28
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 32
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 36
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 40
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 44
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 48
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 52
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 56
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 60
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 64
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 68
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 72
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 76
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 80
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 84
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 88
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 92
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 96
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 100
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 104
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 108
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 112
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 116
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 120
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 124
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 128
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 132
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 136
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 140
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 144
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 148
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 152
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 156
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 160
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 164
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 168
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 172
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 176
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 0.0,
+		"tick": 180
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 220.0,
+		"tick": 184
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 440.0,
+		"tick": 188
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 660.0,
+		"tick": 192
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 880.0,
+		"tick": 196
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 1100.0,
+		"tick": 200
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 1320.0,
+		"tick": 204
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 1540.0,
+		"tick": 208
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 1760.0,
+		"tick": 212
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 1980.0,
+		"tick": 216
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 2200.0,
+		"tick": 220
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 2420.0,
+		"tick": 224
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 2640.0,
+		"tick": 228
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 2860.0,
+		"tick": 232
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 3080.0,
+		"tick": 236
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 3300.0,
+		"tick": 240
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 3520.0,
+		"tick": 244
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 3740.0,
+		"tick": 248
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 3960.0,
+		"tick": 252
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 4180.0,
+		"tick": 256
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 4400.0,
+		"tick": 260
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 4620.0,
+		"tick": 264
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 4840.0,
+		"tick": 268
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 5060.0,
+		"tick": 272
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 5280.0,
+		"tick": 276
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 5500.0,
+		"tick": 280
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 5720.0,
+		"tick": 284
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 5940.0,
+		"tick": 288
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 6160.0,
+		"tick": 292
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 6380.0,
+		"tick": 296
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 6600.0,
+		"tick": 300
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 6820.0,
+		"tick": 304
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 7040.0,
+		"tick": 308
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 7260.0,
+		"tick": 312
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 7480.0,
+		"tick": 316
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 7700.0,
+		"tick": 320
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 7920.0,
+		"tick": 324
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 8140.0,
+		"tick": 328
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 8360.0,
+		"tick": 332
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 8580.0,
+		"tick": 336
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 8800.0,
+		"tick": 340
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 9020.0,
+		"tick": 344
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 9240.0,
+		"tick": 348
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 9460.0,
+		"tick": 352
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 9680.0,
+		"tick": 356
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 9900.0,
+		"tick": 360
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 10120.0,
+		"tick": 364
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 10340.0,
+		"tick": 368
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 10500.0,
+		"tick": 372
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 10500.0,
+		"tick": 376
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 10370.4263760854,
+		"tick": 380
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 9779.90816460155,
+		"tick": 384
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 9226.99311279967,
+		"tick": 388
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 8789.31875673436,
+		"tick": 392
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 8443.43140311881,
+		"tick": 396
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 8170.08191454765,
+		"tick": 400
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 7954.05799195819,
+		"tick": 404
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 7783.33758792573,
+		"tick": 408
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 7648.41986213109,
+		"tick": 412
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 7528.41986213109,
+		"tick": 416
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 7408.41986213109,
+		"tick": 420
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 7288.41986213109,
+		"tick": 424
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 7168.41986213109,
+		"tick": 428
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 7133.41986213109,
+		"tick": 432
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 7183.41986213109,
+		"tick": 436
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 7148.41986213109,
+		"tick": 440
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 7113.41986213109,
+		"tick": 444
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 7163.41986213109,
+		"tick": 448
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 7128.41986213109,
+		"tick": 452
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 7178.41986213109,
+		"tick": 456
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 7143.41986213109,
+		"tick": 460
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 7193.41986213109,
+		"tick": 464
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 7158.41986213109,
+		"tick": 468
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 7123.41986213109,
+		"tick": 472
+	},
+	{
+		"altitude": 0.0,
+		"integrity": 100.0,
+		"nitro": 1.0,
+		"speed": 7173.41986213109,
+		"tick": 476
+	}
+]

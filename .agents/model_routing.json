@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "default": {
+    "driver_kind": "codex",
+    "model": "gpt-6-astra",
+    "options": {
+      "reasoningEffort": "high"
+    }
+  },
+  "claude_fallback": false,
+  "note": "Set by the human on 2026-10-29 ('troque para o astra high'). Delegate through T3 delegate_task."
+}

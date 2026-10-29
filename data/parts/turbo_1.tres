@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PartDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://src/data/part_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"turbo_1"
+slot = &"turbo"
+tier = 1
+display_name = "Blow-off"
+description = "Turbo tier 1."
+price = 400
+rank_bonus = 0.6

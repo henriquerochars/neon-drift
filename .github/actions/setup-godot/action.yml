@@ -1,0 +1,21 @@
+name: Setup pinned Godot
+description: Installs Godot 4.7.2 (and optionally export templates) through tools/setup_godot.sh, cached.
+inputs:
+  templates:
+    description: Also install export templates ("true" or "false")
+    default: "false"
+runs:
+  using: composite
+  steps:
+    - name: Cache Godot toolchain
+      uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+      with:
+        path: |
+          .tools/godot
+          ~/.local/share/godot/export_templates
+        key: godot-4.7.2-${{ runner.os }}-templates-${{ inputs.templates }}-${{ hashFiles('tools/setup_godot.sh') }}
+    - name: Install Godot
+      shell: bash
+      run: |
+        if [ "${{ inputs.templates }}" = "true" ]; then tools/setup_godot.sh all; else tools/setup_godot.sh editor; fi
+        echo "GODOT_BIN=$GITHUB_WORKSPACE/.tools/godot" >> "$GITHUB_ENV"

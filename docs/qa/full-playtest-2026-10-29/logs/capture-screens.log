@@ -1,0 +1,25 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+WARNING: Failed to create wd.xic as the input method or its xim server may not have started yet.
+     at: _create_xic (platform/linuxbsd/x11/display_server_x11.cpp:6347)
+WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.
+     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:372)
+OpenGL API 4.5 (Core Profile) Mesa 25.2.8-0ubuntu0.24.04.4 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 20.1.2, 256 bits)
+
+captured /tmp/neon-qa-repeat-screens/title.png (320x180)
+captured /tmp/neon-qa-repeat-screens/menu.png (320x180)
+captured /tmp/neon-qa-repeat-screens/garage.png (320x180)
+captured /tmp/neon-qa-repeat-screens/options.png (320x180)
+captured /tmp/neon-qa-repeat-screens/options_controls.png (320x180)
+captured /tmp/neon-qa-repeat-screens/select_car.png (320x180)
+captured /tmp/neon-qa-repeat-screens/select_track.png (320x180)
+captured /tmp/neon-qa-repeat-screens/lobby_connect.png (320x180)
+captured /tmp/neon-qa-repeat-screens/lobby_host.png (320x180)
+captured /tmp/neon-qa-repeat-screens/hud.png (320x180)
+captured /tmp/neon-qa-repeat-screens/pause.png (320x180)
+captured /tmp/neon-qa-repeat-screens/results.png (320x180)
+WARNING: 3 RIDs of type "CanvasItem" were leaked.
+   at: _free_rids (servers/rendering/renderer_canvas_cull.cpp:2735)
+WARNING: 51 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 14 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:822)

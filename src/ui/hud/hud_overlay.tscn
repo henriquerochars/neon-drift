@@ -1,0 +1,224 @@
+[gd_scene load_steps=4 format=3 uid="uid://neondrift_hud"]
+
+[ext_resource type="Script" path="res://src/ui/hud/hud_overlay.gd" id="1"]
+[ext_resource type="Script" path="res://src/ui/hud/meter_bar.gd" id="2"]
+[ext_resource type="Script" path="res://src/ui/hud/progress_strip.gd" id="3"]
+
+[node name="HudOverlay" type="CanvasLayer"]
+layer = 10
+script = ExtResource("1")
+
+[node name="Root" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="TopLeft" type="VBoxContainer" parent="Root"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 3.0
+offset_right = 90.0
+offset_bottom = 50.0
+mouse_filter = 2
+theme_override_constants/separation = 1
+
+[node name="SpeedRow" type="HBoxContainer" parent="Root/TopLeft"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 3
+alignment = 2
+
+[node name="SpeedLabel" type="Label" parent="Root/TopLeft/SpeedRow"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.2275, 0.8196, 0.8863, 1)
+theme_override_colors/font_outline_color = Color(0.0431, 0.0392, 0.1176, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 16
+text = "000"
+
+[node name="SpeedUnit" type="Label" parent="Root/TopLeft/SpeedRow"]
+layout_mode = 2
+size_flags_vertical = 8
+mouse_filter = 2
+theme_override_colors/font_outline_color = Color(0.0431, 0.0392, 0.1176, 1)
+theme_override_constants/outline_size = 2
+text = "KM/H"
+
+[node name="LapLabel" type="Label" parent="Root/TopLeft"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.3725, 0.7059, 1)
+theme_override_colors/font_outline_color = Color(0.0431, 0.0392, 0.1176, 1)
+theme_override_constants/outline_size = 2
+text = "LAP 1/3"
+
+[node name="TimeLabel" type="Label" parent="Root/TopLeft"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+theme_override_colors/font_outline_color = Color(0.0431, 0.0392, 0.1176, 1)
+theme_override_constants/outline_size = 2
+text = "0:00.00"
+
+[node name="PlaceLabel" type="Label" parent="Root"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -80.0
+offset_top = 3.0
+offset_right = -16.0
+offset_bottom = 20.0
+grow_horizontal = 0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.9490, 0.6941, 0.2039, 1)
+theme_override_colors/font_outline_color = Color(0.0431, 0.0392, 0.1176, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 16
+text = "1ST"
+horizontal_alignment = 2
+
+[node name="Meters" type="VBoxContainer" parent="Root"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = -32.0
+offset_right = 100.0
+offset_bottom = -3.0
+grow_vertical = 0
+mouse_filter = 2
+theme_override_constants/separation = 2
+
+[node name="NitroRow" type="HBoxContainer" parent="Root/Meters"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 3
+
+[node name="NitroLabel" type="Label" parent="Root/Meters/NitroRow"]
+custom_minimum_size = Vector2(44, 0)
+layout_mode = 2
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.2275, 0.8196, 0.8863, 1)
+theme_override_colors/font_outline_color = Color(0.0431, 0.0392, 0.1176, 1)
+theme_override_constants/outline_size = 2
+text = "NITRO"
+
+[node name="NitroBar" type="Control" parent="Root/Meters/NitroRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(50, 5)
+layout_mode = 2
+size_flags_vertical = 4
+mouse_filter = 2
+script = ExtResource("2")
+
+[node name="ThrusterRow" type="HBoxContainer" parent="Root/Meters"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 3
+
+[node name="ThrusterLabel" type="Label" parent="Root/Meters/ThrusterRow"]
+custom_minimum_size = Vector2(44, 0)
+layout_mode = 2
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.9490, 0.6941, 0.2039, 1)
+theme_override_colors/font_outline_color = Color(0.0431, 0.0392, 0.1176, 1)
+theme_override_constants/outline_size = 2
+text = "THRUST"
+
+[node name="ThrusterBar" type="Control" parent="Root/Meters/ThrusterRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(50, 5)
+layout_mode = 2
+size_flags_vertical = 4
+mouse_filter = 2
+script = ExtResource("2")
+
+[node name="IntegrityRow" type="HBoxContainer" parent="Root/Meters"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 3
+
+[node name="IntegrityLabel" type="Label" parent="Root/Meters/IntegrityRow"]
+custom_minimum_size = Vector2(44, 0)
+layout_mode = 2
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.2314, 0.8275, 0.4157, 1)
+theme_override_colors/font_outline_color = Color(0.0431, 0.0392, 0.1176, 1)
+theme_override_constants/outline_size = 2
+text = "HULL"
+
+[node name="IntegrityBar" type="Control" parent="Root/Meters/IntegrityRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(50, 5)
+layout_mode = 2
+size_flags_vertical = 4
+mouse_filter = 2
+script = ExtResource("2")
+
+[node name="FlashLabel" type="Label" parent="Root"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -120.0
+offset_top = -40.0
+offset_right = 120.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.3725, 0.7059, 1)
+theme_override_colors/font_outline_color = Color(0.0431, 0.0392, 0.1176, 1)
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 24
+text = "3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FinishLabel" type="Label" parent="Root"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -120.0
+offset_top = 0.0
+offset_right = 120.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.9490, 0.6941, 0.2039, 1)
+theme_override_colors/font_outline_color = Color(0.0431, 0.0392, 0.1176, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 16
+text = "FINISH! 1ST"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Strip" type="Control" parent="Root"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -10.0
+offset_top = 24.0
+offset_right = -3.0
+offset_bottom = 124.0
+grow_horizontal = 0
+mouse_filter = 2
+script = ExtResource("3")
